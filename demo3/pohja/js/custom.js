@@ -90,7 +90,7 @@ $(function () {
 			dots: false,
 			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 			autoplay: true,
-			autoplayTimeout: 300,
+			autoplayTimeout: 3000,
 			autoplayHoverPause: true
 		});
 	});
