@@ -60,7 +60,17 @@ $(function() {
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
   $('#success').html('');
+<<<<<<< HEAD
+});
+<<<<<<< Updated upstream
+function clear(){
+  document.getElementById("email").textContent += ""
+}
+=======
+=======
 });
 function clear(){
   document.getElementById("email").textContent += ""
 }
+>>>>>>> 35b616569d4275ec99a5f71995306606d4e39a04
+>>>>>>> Stashed changes
