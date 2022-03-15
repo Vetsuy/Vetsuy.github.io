@@ -301,10 +301,10 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .navbar-dark{
-	background: #ffffff;
+	background: #185a37;
 }
 .navbar-dark .navbar-nav .nav-itemm{
-    color: #3a3a3a;
+    color: #000000;
 	letter-spacing: 1px;
 	font-size: 16px;
 	position: relative;
@@ -313,7 +313,7 @@ a img.aligncenter {
     outline: none;
 }
 .navbar-dark .navbar-nav .nav-ite{
-    color: #3a3a3a;
+    color: #000000;
     background: none;
     margin:0px;
     padding:0px;
@@ -321,7 +321,7 @@ a img.aligncenter {
     outline: none;
 }
 .navbar-dark .navbar-nav .nav-link{
-	color: #3a3a3a;
+	color: #000000;
 	letter-spacing: 1px;
 	font-size: 16px;
 	position: relative;
@@ -570,7 +570,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #185a37;;
 }
 
 #clouds{
@@ -590,6 +590,8 @@ xclip
     position: relative;
     overflow: hidden;
     padding: 70px 80px;
+    margin-top: 50px;
+    background: url(images/bg.png) no-repeat center center #333333;
 }
 
 .noover {
@@ -610,6 +612,7 @@ xclip
 
 .section.wb {
     background-color: #ffffff;
+    background: url(images/bg.png) no-repeat center center #333333;
 }
 
 .section.lb {
@@ -793,7 +796,6 @@ xclip
 	background: #ffffff;
 	margin-bottom: 30px;
 	border-radius: 0px 10px;
-	box-shadow: 0 7px 10px #e6e6e6;
 	text-align: center;
 }
 .ser-icon{

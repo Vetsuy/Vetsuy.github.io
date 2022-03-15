@@ -301,10 +301,10 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .navbar-dark{
-	background: #ffffff;
+	background: #185a37;
 }
 .navbar-dark .navbar-nav .nav-itemm{
-    color: #3a3a3a;
+    color: #000000;
 	letter-spacing: 1px;
 	font-size: 16px;
 	position: relative;
@@ -313,7 +313,7 @@ a img.aligncenter {
     outline: none;
 }
 .navbar-dark .navbar-nav .nav-ite{
-    color: #3a3a3a;
+    color: #000000;
     background: none;
     margin:0px;
     padding:0px;
@@ -321,7 +321,7 @@ a img.aligncenter {
     outline: none;
 }
 .navbar-dark .navbar-nav .nav-link{
-	color: #3a3a3a;
+	color: #000000;
 	letter-spacing: 1px;
 	font-size: 16px;
 	position: relative;
@@ -570,7 +570,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #185a37;;
 }
 
 #clouds{

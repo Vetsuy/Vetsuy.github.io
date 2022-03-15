@@ -1,7 +1,5 @@
 /** Tyytyväisyyden taso tähtimuodossa **/
-body {
-	background: beige;
-}
+
 .wrapper {
 	position: absolute;
 	top: 35%;
