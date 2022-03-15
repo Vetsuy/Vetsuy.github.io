@@ -1,3 +1,4 @@
+/** Tyytyväisyyden taso tähtimuodossa **/
 body {
 	background: beige;
 }
@@ -36,5 +37,4 @@ body {
 .wrapper label:hover:after, .wrapper label:hover~label:after, .wrapper input:checked~label:after {
 	opacity: 1;
 }
-
-/** ADD YOUR AWESOME CODES HERE **/
+/** Tyytyväisyyden taso tähtimuodossa **/
