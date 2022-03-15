@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded")
 $(function() {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -60,3 +61,6 @@ $(function() {
 $('#name').focus(function() {
   $('#success').html('');
 });
+function clear(){
+  document.getElementById("email").textContent += ""
+}
