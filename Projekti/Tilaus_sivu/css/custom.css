@@ -1,0 +1,40 @@
+/** Tyytyväisyyden taso tähtimuodossa **/
+body {
+	background: beige;
+}
+.wrapper {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(180deg);
+	display: inline-flex;
+}
+.wrapper input {
+	display: none;
+}
+.wrapper label {
+	display: block;
+	cursor: pointer;
+	width: 70px;
+}
+.wrapper label:before {
+	content: '★';
+	position: relative;
+	display: block;
+	font-size: 70px;
+	color: black;
+}
+.wrapper label:after {
+	content: '★';
+	position: absolute;
+	display: block;
+	font-size: 70px;
+	color: orange;
+	top: 0;
+	opacity: 0;
+	transition: 10ms;
+}
+.wrapper label:hover:after, .wrapper label:hover~label:after, .wrapper input:checked~label:after {
+	opacity: 1;
+}
+/** Tyytyväisyyden taso tähtimuodossa **/
