@@ -64,4 +64,3 @@ $('#name').focus(function() {
 function clear(){
   document.getElementById("email").textContent += ""
 }
-
