@@ -593,7 +593,7 @@ xclip
     padding-right: 80px;
     padding-bottom: 40px;
     margin-top: 70px;
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(images/bg.png) repeat center center #333333;
 }
 
 .noover {
