@@ -1,4 +1,3 @@
-document.addEventListener("DMContentLoaded")
 function lisaa(a){
     let summa = parseInt(document.getElementById(a).textContent)
     summa += 1
