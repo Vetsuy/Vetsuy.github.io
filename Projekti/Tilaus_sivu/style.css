@@ -587,11 +587,11 @@ xclip
 
 .section {
     display: block;
-    position: relative;
+    position: cover;
     overflow: hidden;
     padding: 70px 80px;
     margin-top: 50px;
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(images/bg.png) repeat #333333;
 }
 
 .noover {
