@@ -454,7 +454,6 @@ a img.aligncenter {
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	position: relative;
 	overflow: hidden;
 	background: #e1e1e1;
@@ -481,6 +480,7 @@ a img.aligncenter {
 	transition-duration: 0.3s;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
+    border-radius: 10px;
 }
 .hvr-radial-in:hover::before, .hvr-radial-in:focus::before, .hvr-radial-in:active::before {
     -webkit-transform: scale(0);
@@ -706,12 +706,12 @@ xclip
 }
 
 .sim-btn{
-	background: #664a3f;
 	font-size: 18px;
 	padding: 10px 20px;
+    background-color: #185a37;
 	color: #ffffff;
-	box-shadow: 0 7px 10px #e6e6e6;
 	border: none;
+    margin-bottom: 40px;
 }
 .sim-btn:hover{
 	color: #ffffff;
@@ -795,7 +795,7 @@ xclip
 	padding: 30px;
 	background: #ffffff;
 	margin-bottom: 30px;
-	border-radius: 0px 10px;
+	border-radius: 10px 10px;
 	text-align: center;
 }
 .ser-icon{
