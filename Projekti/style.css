@@ -2506,7 +2506,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(images/bg.png) repeat center center #333333;
 }
 
 
