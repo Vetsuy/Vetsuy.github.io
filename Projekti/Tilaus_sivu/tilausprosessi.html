@@ -33,6 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
+    <script type="text/javascript" language="javascript" src="js/tilaa.js"></script>
 </head>
 
   <body id="page-top" class="politics_version">
@@ -71,9 +72,9 @@
           </div>
           <h2>Pepperoni pizza</h2>
           <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="pep" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('pep')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('pep')">+</button>
         </div>
               </div><!-- end col -->
 
@@ -84,9 +85,9 @@
           </div>
           <h2>Juusto pizza</h2>
                       <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>					
+                      <div  id="juu" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('juu')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('juu')">+</button>					
                   </div>
               </div><!-- end col -->
       <div class="col-md-3">
@@ -96,9 +97,9 @@
           </div>
           <h2>Kinkku pizza</h2>
                       <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="kin" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('kin')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('kin')">+</button>
         </div>
               </div><!-- end col -->
       <div class="col-md-3">
@@ -108,9 +109,9 @@
           </div>
           <h2>Jauheliha pizza</h2>
                       <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="jau" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('jau')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('jau')">+</button>
         </div>
               </div><!-- end col -->
       <div class="col-md-3">
@@ -120,9 +121,9 @@
           </div>
           <h2>Kebab pizza</h2>
                       <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="keb" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('keb')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('keb')">+</button>
         </div>
               </div><!-- end col -->
       <div class="col-md-3">
@@ -132,9 +133,9 @@
           </div>
           <h2>Tonnikala pizza</h2>
                       <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="ton" class="pizza-maara">0</div>
+                      <button class="pizza-miinus"onclick="poista('ton')">-</button>
+                      <button class="pizza-plussa"onclick="lisaa('ton')">+</button>
         </div>
               </div><!-- end col -->
       <div class="col-md-3">
@@ -144,9 +145,9 @@
           </div>
           <h2>Vegaani pizza</h2>
                       <p>10.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="veg" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('veg')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('veg')">+</button>
         </div>
               </div><!-- end col -->
       <div class="col-md-3">
@@ -156,9 +157,9 @@
           </div>
           <h2>Fantasia pizza</h2>
                       <p>15.00€</p>
-                      <div class="pizza-maara">0</div>
-                      <button class="pizza-miinus">-</button>
-                      <button class="pizza-plussa">+</button>
+                      <div id="fan" class="pizza-maara">0</div>
+                      <button class="pizza-miinus" onclick="poista('fan')">-</button>
+                      <button class="pizza-plussa" onclick="lisaa('fan')">+</button>
         </div>
               </div>
           </div>
