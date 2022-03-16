@@ -2639,8 +2639,9 @@ select.mobile-device {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    padding: 30px 0px;
     overflow: hidden;
+    padding: 40px 0;
+    margin-top: 40px;
 }
 
 

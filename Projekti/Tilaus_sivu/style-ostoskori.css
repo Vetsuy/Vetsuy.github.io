@@ -1,19 +1,21 @@
-body{
+.ostoslista-body{
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
-	height: 100vh;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .CartContainer{
-	width: 70%;
+	width: 100%;
 	height: 90%;
 	background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px #1687d933;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	margin-top: 80px;
+	display: inline-block;
 }
 
 .Header{
@@ -21,8 +23,10 @@ body{
 	width: 90%;
 	height: 15%;
 	display: flex;
+	padding-bottom: 30px;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid #cecaca
 }
 
 .Heading{
@@ -44,10 +48,13 @@ body{
 .Cart-Items{
 	margin: auto;
 	width: 90%;
-	height: 30%;
+	height: 20%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid #cecaca;
 }
 .image-box{
 	width: 15%;
@@ -60,7 +67,7 @@ body{
 .title{
 	padding-top: 10px;
 	line-height: 10px;
-	font-size: 32px;
+	font-size: 28px;
 	font-family: 'Open Sans';
 	font-weight: 800;
 	color: #202020;
