@@ -14,12 +14,13 @@ function poista(a){
     document.getElementById(a).textContent = summa
 }
 function tilaa(){
-    let pep = document.getElementById("pep").textContent
-    if(pep>0){
-        localStorage.setItem("pep", document.getElementById("pep").textContent)
+    let a = ["pep","juu","kin","jau","keb","ton","veg"]
+    for (i=0;i<=6;i++){
+        let  g = document.getElementById(a[i]).textContent
+    if(g>0){
+        localStorage.setItem(a[i], document.getElementById(a[i]).textContent)
+    }else if(g="0"){
+        localStorage.setItem(a[i],0)
     }
-    let  juu = document.getElementById("juu").textContent
-    if(juu>0){
-        localStorage.setItem("juu", document.getElementById("juu").textContent)
     }
 }
