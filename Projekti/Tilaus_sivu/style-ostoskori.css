@@ -185,3 +185,34 @@ hr{
 	font-weight: 600;
 	color: #202020;
 }
+
+/* juttu */
+.toimitustapa{
+	float: left;
+	margin-left: 5%;
+	width: 28%;
+}
+.a{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.b{
+	font-size: 22px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #202020;
+}
+.c{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+.d{
+	font-size: 36px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+}
