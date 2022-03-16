@@ -587,6 +587,7 @@ xclip
 
 .section {
     display: block;
+<<<<<<< HEAD
     position: relative;
     padding-top: 80px;
     padding-left: 80px;
@@ -594,6 +595,13 @@ xclip
     padding-bottom: 40px;
     margin-top: 70px;
     background: url(images/bg.png) repeat center center #333333;
+=======
+    position: cover;
+    overflow: hidden;
+    padding: 70px 80px;
+    margin-top: 50px;
+    background: url(images/bg.png) repeat #333333;
+>>>>>>> 5aaacc55027cfc014b81a14e76d3f3cfdbc46c08
 }
 
 .noover {
