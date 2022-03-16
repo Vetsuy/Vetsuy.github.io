@@ -13,3 +13,13 @@ function poista(a){
     }
     document.getElementById(a).textContent = summa
 }
+function tilaa(){
+    let pep = document.getElementById("pep").textContent
+    if(pep>0){
+        localStorage.setItem("pep", document.getElementById("pep").textContent)
+    }
+    let  juu = document.getElementById("juu").textContent
+    if(juu>0){
+        localStorage.setItem("juu", document.getElementById("juu").textContent)
+    }
+}
