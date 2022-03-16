@@ -588,8 +588,11 @@ xclip
 .section {
     display: block;
     position: relative;
-    padding: 70px 80px;
-    margin-top: 50px;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    margin-top: 70px;
     background: url(images/bg.png) no-repeat center center #333333;
 }
 
@@ -2638,7 +2641,6 @@ select.mobile-device {
     text-align: left;
     padding: 30px 0px;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 
@@ -2918,7 +2920,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2927,7 +2929,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
