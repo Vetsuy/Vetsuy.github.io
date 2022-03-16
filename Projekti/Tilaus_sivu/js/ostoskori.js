@@ -29,6 +29,6 @@ if(localStorage.getItem("ton")!=="0"){
     document.getElementById("tonn").style.display="block"
 }
 if(localStorage.getItem("veg")!=="0"){
-    document.getElementById("vegg").style.display="block"
+    document.getElementById("vega").style.display="block"
 }
 }
