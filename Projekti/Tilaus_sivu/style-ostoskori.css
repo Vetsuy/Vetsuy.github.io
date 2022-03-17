@@ -195,6 +195,9 @@ hr{
 	margin-right: 5%;
     width: 38%;
 	float: right;
+	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 .nappi {
     font-weight: 300;
@@ -206,6 +209,9 @@ hr{
 	padding: 10px 10px;
 	color: #202020;
 	cursor: pointer;
+	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 .osoite {
 	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
@@ -221,6 +227,9 @@ hr{
 	margin-top: 10px;
 	align-items: center;
 	color: #202020;
+	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 
 .question {
@@ -229,6 +238,9 @@ hr{
 	top: 40px;
 	clear: left;
 	color: #202020;
+	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
   
 .kysymys_nappi {
@@ -237,18 +249,14 @@ hr{
 	margin-bottom: 5px;
 	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
 	border-radius: 20px;
-    padding: 0;
 	border: none;
 	padding: 10px 10px;
 	color: #202020;
 	cursor: pointer;
 	display: inline-block;
-}
-  
-.kysymys_nappi:hover {
-	background: #C0D6DF;
-	color: #202020;;
-	cursor: pointer;
+	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 .valmistusaika {
 	text-align: center;
@@ -257,4 +265,20 @@ hr{
 	clear: left;
 	margin: 20px 20px;
 	color: #202020;
+}
+.tilaa_nappi {
+	font-weight: 300;
+    margin-top: 15px;
+	margin-bottom: 15px;
+	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
+	border-radius: 20px;
+	border: none;
+	padding: 10px 10px;
+	cursor: pointer;
+	display: inline-block;
+	width: 15%;
+	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
 }
