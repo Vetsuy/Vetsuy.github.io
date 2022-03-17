@@ -13,6 +13,7 @@ function hide(){
    document.getElementById("koti osoite").style.display="none"
    document.getElementById("aika").style.display="none"
    document.getElementById("teksti").style.display="none"
+   document.getElementById("tilaa").style.display="none"
    if(localStorage.getItem("pep")!=="0"){
        document.getElementById("pepe").style.display="block"
    }
@@ -49,6 +50,12 @@ if(localStorage.getItem("tek")=="kylla"){
     document.getElementById("teksti").style.display="block"
 }
 if(localStorage.getItem("aika")=="kylla"){
+    document.getElementById("vahvista").style.display="none"
+    document.getElementById("teksti").style.display="none"
+    document.getElementById("nouto").style.display="none"
+    document.getElementById("kuljetus").style.display="none"
+    document.getElementById("tilaa").style.display="none"
+    document.getElementById("q").style.display="none"
     let p = localStorage.getItem("fuu")
     let r = p*10+parseInt(localStorage.getItem("a3"))+parseInt(localStorage.getItem("310"))+parseInt(localStorage.getItem("1020"))
     document.getElementById("aika").textContent = "Toimituksessa menee "+r+" minuuttia"
@@ -62,6 +69,9 @@ if(localStorage.getItem("aika")=="kylla"){
     let z = x*10
     document.getElementById("aika").textContent = "pizzaan menee "+z+" minuuttia"
     document.getElementById("aika").style.display="block"
+}if(localStorage.getItem("ti")=="kylla"){
+    document.getElementById("tilaa").style.display="block"
+    document.getElementById("q").style.display="none"
 }
 let as = Object.keys(localStorage)
 let a = ["pep","juu","kin","jau","keb","ton","veg"]
@@ -127,21 +137,26 @@ function guu(){
     localStorage.setItem("a3",5)
     localStorage.setItem("310",0)
     localStorage.setItem("1020",0)
-    localStorage.setItem("aika","kylla")
+    localStorage.setItem("ti","kylla")
     window.location.reload();
 }
 function gaa(){
     localStorage.setItem("a3",0)
     localStorage.setItem("310",10)
     localStorage.setItem("1020",0)
-    localStorage.setItem("aika","kylla")
+    localStorage.setItem("ti","kylla")
     window.location.reload();
 }
 function gii(){
     localStorage.setItem("a3",0)
     localStorage.setItem("310",0)
     localStorage.setItem("1020",20)
+    localStorage.setItem("ti","kylla")
+    window.location.reload();
+}
+function tiloo(){
     localStorage.setItem("aika","kylla")
+    localStorage.setItem("ti","ei")
     window.location.reload();
 }
 function kitiin(){
