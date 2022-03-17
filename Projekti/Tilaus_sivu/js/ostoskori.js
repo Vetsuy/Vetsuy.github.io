@@ -9,6 +9,10 @@ function hide(){
    document.getElementById("tonn").style.display="none"
    document.getElementById("vega").style.display="none"
    document.getElementById("fan").style.display="none"
+   document.getElementById("q").style.display="none"
+   document.getElementById("koti osoite").style.display="none"
+   document.getElementById("aika").style.display="none"
+   document.getElementById("teksti").style.display="none"
    if(localStorage.getItem("pep")!=="0"){
        document.getElementById("pepe").style.display="block"
    }
@@ -29,6 +33,19 @@ if(localStorage.getItem("ton")!=="0"){
 }
 if(localStorage.getItem("veg")!=="0"){
     document.getElementById("vega").style.display="block"
+}
+if(localStorage.getItem("kuljetus")=="kylla"){
+    document.getElementById("koti osoite").style.display="block"
+}
+if(localStorage.getItem("kysy")=="kylla"){
+    document.getElementById("q").style.display="block"
+    document.getElementById("teksti").style.display="none"
+    document.getElementById("nouto").style.display="none"
+    document.getElementById("kuljetus").style.display="none"
+    document.getElementById("koti osoite").style.display="none"
+}
+if(localStorage.getItem("tek")=="kylla"){
+    document.getElementById("teksti").style.display="block"
 }
 let as = Object.keys(localStorage)
 let a = ["pep","juu","kin","jau","keb","ton","veg"]
@@ -62,4 +79,30 @@ function poista_kaikki(){
     localStorage.setItem("ton",0)
     localStorage.setItem("veg",0)
     window.location.reload();
+}
+function kuljetus(){
+localStorage.setItem("kuljetus", "kylla")
+localStorage.setItem("nouto","ei")
+window.location.reload();
+}
+
+function n(){
+localStorage.setItem("kuljetus", "ei")
+localStorage.setItem("nouto","kylla")
+window.location.reload();
+}
+function vahvista(){
+if(localStorage.getItem("nouto")=="kylla"){
+    localStorage.setItem("kysy","kylla")
+}else if(localStorage.getItem("kuljetus")=="kylla"){
+    if(document.getElementById("koti osoite").value==""){
+        localStorage.setItem("tek","kylla")
+    }else{
+        localStorage.setItem("kysy","kylla")
+        localStorage.setItem("tek","ei")
+    }
+}else{
+
+}
+window.location.reload();
 }
