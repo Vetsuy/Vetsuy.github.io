@@ -56,6 +56,14 @@ if(localStorage.getItem("aika")=="kylla"){
     document.getElementById("kuljetus").style.display="none"
     document.getElementById("tilaa").style.display="none"
     document.getElementById("q").style.display="none"
+    document.getElementById("poistak").style.display="none"
+    document.getElementById("poistaa").style.display="none"
+    document.getElementById("poistab").style.display="none"
+    document.getElementById("poistac").style.display="none"
+    document.getElementById("poistad").style.display="none"
+    document.getElementById("poistae").style.display="none"
+    document.getElementById("poistaf").style.display="none"
+    document.getElementById("poistag").style.display="none"
     let p = localStorage.getItem("fuu")
     let r = p*10+parseInt(localStorage.getItem("a3"))+parseInt(localStorage.getItem("310"))+parseInt(localStorage.getItem("1020"))
     document.getElementById("aika").textContent = "Toimituksessa menee "+r+" minuuttia"
