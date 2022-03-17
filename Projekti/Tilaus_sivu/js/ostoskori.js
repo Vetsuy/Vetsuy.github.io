@@ -144,3 +144,11 @@ function gii(){
     localStorage.setItem("aika","kylla")
     window.location.reload();
 }
+function kitiin(){
+    localStorage.setItem("nouto","eeee")
+    localStorage.setItem("kuljetus","eeee")
+    localStorage.setItem("viak","eeeee")
+    localStorage.setItem("kysy","eeeee")
+    localStorage.setItem("aika","eeeee")
+    localStorage.setItem("tek","eeeeee")
+}
