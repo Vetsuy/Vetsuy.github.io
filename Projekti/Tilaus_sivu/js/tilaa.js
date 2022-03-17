@@ -13,6 +13,7 @@ function poista(a){
     document.getElementById(a).textContent = summa
 }
 function tilaa(){
+    localStorage.clear()
     let a = ["pep","juu","kin","jau","keb","ton","veg"]
     for (i=0;i<=6;i++){
         let  g = document.getElementById(a[i]).textContent

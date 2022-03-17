@@ -39,6 +39,7 @@ if(localStorage.getItem("kuljetus")=="kylla"){
 }
 if(localStorage.getItem("kysy")=="kylla"){
     document.getElementById("q").style.display="block"
+    document.getElementById("vahvista").style.display="none"
     document.getElementById("teksti").style.display="none"
     document.getElementById("nouto").style.display="none"
     document.getElementById("kuljetus").style.display="none"
@@ -46,6 +47,21 @@ if(localStorage.getItem("kysy")=="kylla"){
 }
 if(localStorage.getItem("tek")=="kylla"){
     document.getElementById("teksti").style.display="block"
+}
+if(localStorage.getItem("aika")=="kylla"){
+    let p = localStorage.getItem("fuu")
+    let r = p*10+parseInt(localStorage.getItem("a3"))+parseInt(localStorage.getItem("310"))+parseInt(localStorage.getItem("1020"))
+    document.getElementById("aika").textContent = "Toimituksessa menee "+r+" minuuttia"
+    document.getElementById("aika").style.display="block"
+}if(localStorage.getItem("vika")=="kylla"){
+    document.getElementById("vahvista").style.display="none"
+    document.getElementById("teksti").style.display="none"
+    document.getElementById("nouto").style.display="none"
+    document.getElementById("kuljetus").style.display="none"
+    let x = localStorage.getItem("fuu")
+    let z = x*10
+    document.getElementById("aika").textContent = "pizzaan menee "+z+" minuuttia"
+    document.getElementById("aika").style.display="block"
 }
 let as = Object.keys(localStorage)
 let a = ["pep","juu","kin","jau","keb","ton","veg"]
@@ -65,6 +81,7 @@ let f = parseInt(document.getElementById("hinta").textContent)+parseInt(document
 document.getElementById("total").textContent = f+",00€"
 let g = parseInt(document.getElementById("count").textContent)+parseInt(document.getElementById("count_ju").textContent)+parseInt(document.getElementById("count_ki").textContent)+parseInt(document.getElementById("count_ja").textContent)+parseInt(document.getElementById("count_ke").textContent)+parseInt(document.getElementById("count_to").textContent)+parseInt(document.getElementById("count_ve").textContent)
 document.getElementById("valinta").textContent = g+" valintaa"
+localStorage.setItem("fuu",g)
 }
 function poista(h){
     localStorage.setItem(h,0)
@@ -93,7 +110,7 @@ window.location.reload();
 }
 function vahvista(){
 if(localStorage.getItem("nouto")=="kylla"){
-    localStorage.setItem("kysy","kylla")
+    localStorage.setItem("vika","kylla")
 }else if(localStorage.getItem("kuljetus")=="kylla"){
     if(document.getElementById("koti osoite").value==""){
         localStorage.setItem("tek","kylla")
@@ -102,7 +119,28 @@ if(localStorage.getItem("nouto")=="kylla"){
         localStorage.setItem("tek","ei")
     }
 }else{
-
+localStorage.setItem("tek","kylla")
 }
 window.location.reload();
+}
+function guu(){
+    localStorage.setItem("a3",5)
+    localStorage.setItem("310",0)
+    localStorage.setItem("1020",0)
+    localStorage.setItem("aika","kylla")
+    window.location.reload();
+}
+function gaa(){
+    localStorage.setItem("a3",0)
+    localStorage.setItem("310",10)
+    localStorage.setItem("1020",0)
+    localStorage.setItem("aika","kylla")
+    window.location.reload();
+}
+function gii(){
+    localStorage.setItem("a3",0)
+    localStorage.setItem("310",0)
+    localStorage.setItem("1020",20)
+    localStorage.setItem("aika","kylla")
+    window.location.reload();
 }
