@@ -256,12 +256,17 @@ hr{
     font-weight: 600;
 }
 .valmistusaika {
-	text-align: center;
-	position: relative;
 	top: 40px;
 	clear: left;
 	margin: 20px 20px;
 	color: #202020;
+	text-align: center;
+    position: relative;
+    color: #202020;
+	font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
 }
 .tilaa_nappi {
 	font-weight: 300;
@@ -275,6 +280,18 @@ hr{
 	display: inline-block;
 	width: 15%;
 	font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #202020;
+}
+.kysymys-box {
+    align-content: middle;
+}
+.kysy {
+	text-align: center;
+    position: relative;
+    color: #202020;
+	font-size: 18px;
     font-family: 'Open Sans';
     font-weight: 600;
     color: #202020;
