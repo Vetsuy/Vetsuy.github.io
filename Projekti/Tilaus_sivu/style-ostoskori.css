@@ -3,18 +3,17 @@
 	padding: 0;
 	height: auto;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .CartContainer{
-	width: 100%;
+	width: 65%;
 	height: 90%;
 	background-color: #ffffff;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
 	padding-top: 40px;
 	margin-top: 80px;
+	display: inline-block;
 }
 
 .Header{
@@ -41,6 +40,7 @@
 	color: #E44C4C;
 	cursor: pointer;
 	border-bottom: 1px solid #E44C4C;
+	padding-bottom: 0;
 }
 
 .Cart-Items{
@@ -50,8 +50,8 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-around;
+	align-items: left;
 	border-bottom: 1px solid #cecaca;
 }
 .image-box{
@@ -142,7 +142,6 @@ hr{
 	margin-right: 5%;
 }
 .checkout{
-	float: right;
 	margin-right: 5%;
 	width: 28%;
 }
@@ -176,7 +175,7 @@ hr{
 	height: 40px;
 	border: none;
 	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
-	border-radius: 20px;
+	border-radius: 5px;
 	cursor: pointer;
 	font-size: 16px;
 	font-family: 'Open Sans';
@@ -192,7 +191,6 @@ hr{
 	margin-bottom: 10px;
 	margin-right: 5%;
     width: 38%;
-	float: right;
 	font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -201,7 +199,7 @@ hr{
     font-weight: 300;
     margin: 0 10px;
 	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
-	border-radius: 20px;
+	border-radius: 5px;
     padding: 0;
 	border: none;
 	padding: 10px 10px;
@@ -221,7 +219,7 @@ hr{
     height: 55px;
     resize: none;
     width: 73%;
-    border-radius: 20px;
+    border-radius: 5px;
 	margin-top: 10px;
 	align-items: center;
 	color: #202020;
@@ -246,7 +244,7 @@ hr{
     margin-top: 5px;
 	margin-bottom: 5px;
 	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
-	border-radius: 20px;
+	border-radius: 5px;
 	border: none;
 	padding: 10px 10px;
 	color: #202020;
@@ -269,7 +267,7 @@ hr{
     margin-top: 15px;
 	margin-bottom: 15px;
 	background: linear-gradient(to bottom right, #1b663e, #8dbd56);
-	border-radius: 20px;
+	border-radius: 5px;
 	border: none;
 	padding: 10px 10px;
 	cursor: pointer;

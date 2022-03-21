@@ -193,62 +193,66 @@
               <div class="remove"><u>Poista</u></div>
             </div>
         </div>
+      </div>
 
-        <div class="checkout">
-          <div class="total">
-            <div class="toimitusaika">
-              <div class="toimitus">
-                  <div class="napit">
-                      <button id="nouto" onclick="n()" class="nappi">Nouto</button>
-                      <button id="kuljetus" onclick="kuljetus()" class="nappi">Kuljetus</button>
-                      <input type="text" id="koti osoite" placeholder="koti osoite" class="osoite" value=""></input>
-                  </div>
+      <div class="checkout">
+        <div class="total">
+          <div class="toimitusaika">
+            <div class="toimitus">
+              <div class="napit">
+                <button id="nouto" onclick="n()" class="nappi">Nouto</button>
+                <button id="kuljetus" onclick="kuljetus()" class="nappi">Kuljetus</button>
+                <input type="text" id="koti osoite" placeholder="koti osoite" class="osoite" value=""></input>
+              </div>
+
+              <div class="Subtotal">Hinta</div>
+                <div id="valinta" class="items">0 valintaa</div>
+              </div>
+
+              <div id="total" class="total-amount">0€</div>
+                <button id="vahvista" class="button" onclick="vahvista()">vahvista</button></div>
+                <p id="teksti">joko et ole valinnut kuljetusta tai noutoa tai et ole antanut koti osoitetta</p>
+              </div> 
+      
+              <div  class="question">
+                <div id="q">
+                  <h2>Kuinka kaukana asut?</h2>
+                </div>
+              </div>
+      
+              <div class="answer">
+                <button class="kysymys_nappi" id="alle_3_km" onclick="guu()">Alle 3km</button>
+              </div>
+      
+              <div class="answer">
+                <button class="kysymys_nappi" id="3-10_km" onclick="gaa()">3-10km</button>
+              </div>
+      
+              <div class="answer">
+                <button class="kysymys_nappi" id="10-20_km" onclick="gii()">10-20km</button>
+              </div>
+
+              <div class="tilaamaan">
+                <button class="tilaa_nappi" id="tilaa" onclick="tiloo()">Tilaa</button>
+              </div>
+      
+              <div>
+                <h2 id="aika" class="valmistusaika">Toimituksessa menee x minuuttia</h2>
               </div>
             </div>
-            <div>
-              <div class="Subtotal">Hinta</div>
-              <div id="valinta" class="items">0 valintaa</div>
-            </div>
-            <div id="total" class="total-amount">0€</div>
           </div>
-          <button id="vahvista" class="button" onclick="vahvista()">vahvista</button></div>
-          <p id="teksti">joko et ole valinnut kuljetusta tai noutoa tai et ole antanut koti osoitetta</p>
-        </div>
+        <div>
       </div>
-
-      <div  class="question">
-        <div id="q">
-        <h2>Kuinka kaukana asut?</h2>
-      
-        <div class="answer">
-          <button class="kysymys_nappi" id="alle_3_km" onclick="guu()">Alle 3km</button>
-        </div>
-      
-        <div class="answer">
-          <button class="kysymys_nappi" id="3-10_km" onclick="gaa()">3-10km</button>
-        </div>
-      
-        <div class="answer">
-          <button class="kysymys_nappi" id="10-20_km" onclick="gii()">10-20km</button>
-        </div>
-        </div>
-        <div class="tilaamaan">
-          <button class="tilaa_nappi" id="tilaa" onclick="tiloo()">Tilaa</button>
-        </div>
-      </div>
-
-      <div>
-        <h2 id="aika" class="valmistusaika">Toimituksessa menee x minuuttia</h2>
-      </div>
+    </div>
 
     <div class="copyrights">
       <div class="container-fluid">
-          <div class="footer-distributed">
-              <div class="footer-left">
-                  <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
-                  <a href="https://html.design/">Keuda Pojat</a></p>
-              </div>
+        <div class="footer-distributed">
+          <div class="footer-left">
+            <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
+            <a href="https://html.design/">Keuda Pojat</a></p>
           </div>
+        </div>
       </div>
     </div>
 
