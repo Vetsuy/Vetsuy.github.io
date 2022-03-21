@@ -22,7 +22,6 @@
 	width: 90%;
 	height: 15%;
 	display: flex;
-	padding-bottom: 30px;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #cecaca
@@ -47,7 +46,7 @@
 .Cart-Items{
 	margin: auto;
 	width: 90%;
-	height: 20%;
+	height: 30%;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	display: flex;
@@ -81,9 +80,8 @@
 
 .counter{
 	width: 15%;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	margin: 30px;
 }
 .btn{
 	width: 40px;
