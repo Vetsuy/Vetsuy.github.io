@@ -35,11 +35,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
-    <script type="text/javascript" language="javascript" src="js/ostoskori.js"></script>
 </head>
 
   <body id="page-top" class="politics_version">
-
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -60,19 +58,25 @@
       </div>
     </nav>
 
+    <div class="header-top"></div>
+
     <div class="ostoslista-body">
       <div class="CartContainer">
         <div class="Header">
-          <h3 class="Heading">Ostoskori</h3>
-          <h5 onclick="poista_kaikki()" id="poistak" class="Action">Poista kaikki</h5>
+          <div class="tuote-heading">Tuote</div>
+          <div class="hinta-heading">Hinta</div>
+          <div class="maara-heading">Määrä</div>
+          <div class="summa-heading">Summa</div>
         </div>
-  
         <div id="pepe" class="Cart-Items">
             <div id="gggg" class="image-box">
-              <img src="uploads/pepperoni-pizza.jpg" style={{ height="120px" }} />
+              <img src="uploads/pepperoni-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
             </div>
             <div class="about">
               <h1 class="title">Pepperoni pizza</h1>
+            </div>
+            <div class="about">
+              <div class="yksittaishinta">10€</div>
             </div>
             <div class="counter">
               <div id="count" class="count">0</div>
@@ -85,10 +89,13 @@
 
         <div id="kebab" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/kebab-pizza.jpg" style={{ height="120px" }} />
+            <img src="uploads/kebab-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
           </div>
           <div class="about">
             <h1 class="title">Kebab pizza</h1>
+          </div>
+          <div class="about">
+            <div class="yksittaishinta">10€</div>
           </div>
           <div class="counter">
             <div id="count_ke" class="count">0</div>
@@ -101,10 +108,13 @@
 
         <div id="jauh" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/jauheliha-pizza.jpg" style={{ height="120px" }} />
+            <img src="uploads/jauheliha-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
           </div>
           <div class="about">
             <h1  class="title">Jauhenliha pizza</h1>
+          </div>
+          <div class="about">
+            <div class="yksittaishinta">10€</div>
           </div>
           <div class="counter">
             <div id="count_ja" class="count">0</div>
@@ -117,10 +127,13 @@
 
         <div id="kink" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/kinkku-pizza.jpg" style={{ height="120px" }} />
+            <img src="uploads/kinkku-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
           </div>
           <div class="about">
             <h1 class="title">Kinkku pizza</h1>
+          </div>
+          <div class="about">
+            <div class="yksittaishinta">10€</div>
           </div>
           <div class="counter">
             <div id="count_ki" class="count">0</div>
@@ -133,10 +146,13 @@
 
         <div id="tonn" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/tonnikala-pizza.jpg" style={{ height="120px" }} />
+            <img src="uploads/tonnikala-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
           </div>
           <div class="about">
             <h1 class="title">Tonnikala pizza</h1>
+          </div>
+          <div class="about">
+            <div class="yksittaishinta">10€</div>
           </div>
           <div class="counter">
             <div id="count_to" class="count">0</div>
@@ -149,10 +165,13 @@
 
         <div id="vega" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/vegaani-pizza.jpg" style={{ height="120px" }} />
+            <img src="uploads/vegaani-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
           </div>
           <div class="about">
             <h1 class="title">Vegaani pizza</h1>
+          </div>
+          <div class="about">
+            <div class="yksittaishinta">10€</div>
           </div>
           <div class="counter">
             <div id="count_ve" class="count">0</div>
@@ -165,10 +184,13 @@
 
         <div id="juus" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/juusto-pizza.jpg" style={{ height="120px" }} />
+            <img src="uploads/juusto-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
           </div>
           <div class="about">
             <h1 class="title">Juusto pizza</h1>
+          </div>
+          <div class="about">
+            <div class="yksittaishinta">10€</div>
           </div>
           <div class="counter">
             <div id="count_ju" class="count">0</div>
@@ -181,10 +203,13 @@
 
         <div id="fan"class="Cart-Items pad">
             <div class="image-box">
-              <img src="uploads/fantasia-pizza.jpg" style={{ height="120px" }} />
+              <img src="uploads/fantasia-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
             </div>
             <div class="about">
               <h1 class="title">Fantasiapizza</h1>
+            </div>
+            <div class="about">
+              <div class="yksittaishinta">10€</div>
             </div>
             <div class="counter">
               <div class="count">0</div>
@@ -194,64 +219,73 @@
               <div class="remove"><u>Poista</u></div>
             </div>
         </div>
+      </div>
 
-        <div class="checkout">
-          <div class="total">
-            <div class="toimitusaika">
-              <div class="toimitus">
-                  <div class="napit">
-                      <button id="nouto" onclick="n()" class="nappi">Nouto</button>
-                      <button id="kuljetus" onclick="kuljetus()" class="nappi">Kuljetus</button>
-                      <input type="text" id="koti osoite" placeholder="koti osoite" class="osoite" value=""></input>
+      <div class="checkout">
+        <div class="total">
+          <div class="toimitusaika">
+            <div class="toimitus">
+              <div>
+                <div class="Subtotal" id="total">Hinta NaN€</div>
+                <div id="valinta" class="items">0 valintaa</div>
+
                   </div>
+                  <!--<p id="teksti">joko et ole valinnut kuljetusta tai noutoa tai et ole antanut koti osoitetta</p>-->
+                </div>
               </div>
             </div>
-            <div>
-              <div class="Subtotal">Hinta</div>
-              <div id="valinta" class="items">0 valintaa</div>
+
+            <div class="napit">
+              <div>
+                <button id="nouto" onclick="n()" class="nappi">Nouto</button>
+                <button id="kuljetus" onclick="kuljetus()" class="nappi">Kuljetus</button>
+              </div> 
+              <div><input type="text" id="koti osoite" placeholder="koti osoite" class="osoite" value=""></input></div>
+              <button id="vahvista" class="button" onclick="vahvista()">Vahvista</button>
             </div>
-            <div id="total" class="total-amount">0€</div>
-          </div>
-          <button id="vahvista" class="button" onclick="vahvista()">vahvista</button></div>
-          <p id="teksti">joko et ole valinnut kuljetusta tai noutoa tai et ole antanut koti osoitetta</p>
-        </div>
-      </div>
 
-      <div  class="question">
-        <div id="q">
-        <h2>Kuinka kaukana asut?</h2>
-      
-        <div class="answer">
-          <button class="kysymys_nappi" id="alle_3_km" onclick="guu()">Alle 3km</button>
-        </div>
-      
-        <div class="answer">
-          <button class="kysymys_nappi" id="3-10_km" onclick="gaa()">3-10km</button>
-        </div>
-      
-        <div class="answer">
-          <button class="kysymys_nappi" id="10-20_km" onclick="gii()">10-20km</button>
-        </div>
-        </div>
-        <div class="tilaamaan">
-          <button class="tilaa_nappi" id="tilaa" onclick="tiloo()">Tilaa</button>
-        </div>
-      </div>
+            <div class="Kysymykset" id="q">
+              <div class="kysymys-box">
 
-      <div>
-        <h2 id="aika" class="valmistusaika">Toimituksessa menee x minuuttia</h2>
-      </div>
+                <div>
+                  <h2 class="kysy">Kuinka kaukana asut?</h2>
+                </div>
 
-    <div class="copyrights">
-      <div class="container-fluid">
-          <div class="footer-distributed">
-              <div class="footer-left">
-                  <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
-                  <a href="https://html.design/">Keuda Pojat</a></p>
+                <div class="answer">
+                  <button class="kysymys_nappi" id="alle_3_km" onclick="guu()">Alle 3km</button>
+                </div>
+            
+                <div class="answer">
+                  <button class="kysymys_nappi" id="3-10_km" onclick="gaa()">3-10km</button>
+                </div>
+            
+                <div class="answer">
+                  <button class="kysymys_nappi" id="10-20_km" onclick="gii()">10-20km</button>
+                </div>
+      
+                <div class="tilaamaan">
+                  <button class="tilaa_nappi" id="tilaa" onclick="tiloo()">Tilaa</button>
+                </div>
+            
+                <div>
+                  <h2 id="aika" class="valmistusaika">Toimituksessa menee NaN minuuttia</h2>
+                </div>
               </div>
+            </div>
           </div>
+        <div>
       </div>
     </div>
 
+    <div class="copyrights">
+      <div class="container-fluid">
+        <div class="footer-distributed">
+          <div class="footer-left">
+            <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
+            <a href="https://html.design/">Keuda Pojat</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

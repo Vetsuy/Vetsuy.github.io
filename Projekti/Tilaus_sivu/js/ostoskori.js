@@ -15,28 +15,28 @@ function hide(){
    document.getElementById("teksti").style.display="none"
    document.getElementById("tilaa").style.display="none"
    if(localStorage.getItem("pep")!=="0"){
-       document.getElementById("pepe").style.display="block"
+       document.getElementById("pepe").style.display="flex"
    }
    if(localStorage.getItem("juu")!=="0"){
-    document.getElementById("juus").style.display="block"
+    document.getElementById("juus").style.display="flex"
 }
 if(localStorage.getItem("kin")!=="0"){
-    document.getElementById("kink").style.display="block"
+    document.getElementById("kink").style.display="flex"
 }
 if(localStorage.getItem("jau")!=="0"){
-    document.getElementById("jauh").style.display="block"
+    document.getElementById("jauh").style.display="flex"
 }
 if(localStorage.getItem("keb")!=="0"){
-    document.getElementById("kebab").style.display="block"
+    document.getElementById("kebab").style.display="flex"
 }
 if(localStorage.getItem("ton")!=="0"){
-    document.getElementById("tonn").style.display="block"
+    document.getElementById("tonn").style.display="flex"
 }
 if(localStorage.getItem("veg")!=="0"){
-    document.getElementById("vega").style.display="block"
+    document.getElementById("vega").style.display="flex"
 }
 if(localStorage.getItem("kuljetus")=="kylla"){
-    document.getElementById("koti osoite").style.display="block"
+    document.getElementById("koti osoite").style.display="flex"
 }
 if(localStorage.getItem("kysy")=="kylla"){
     document.getElementById("q").style.display="block"
