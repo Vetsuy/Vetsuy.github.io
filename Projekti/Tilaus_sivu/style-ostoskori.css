@@ -1,27 +1,29 @@
 .ostoslista-body{
+	width: 100%;
 	max-width: 1480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+	margin: auto;
 }
 
 .CartContainer{
 	width: 100%;
 	height: 100%;
 	background-color: #ffffff;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
 	display: inline-block;
 }
 
 .Header{
+	width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     border-bottom: 1px solid #e2e2e2;
 }
 .inner_header {
+	width: 100%;
 	display: flex;
     flex-grow: 1;
 }
@@ -51,10 +53,11 @@
 }
 
 .Cart-Items{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	display: flex;
-	border-bottom: 1px solid #e2e2e2;
+	width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    border-bottom: 1px solid #e2e2e2;
 }
 .image-box{
 	width: 130px;
@@ -64,7 +67,7 @@
 }
 .cart-items-ei-kuva {
 	display: flex;
-	flex-grow: 1;
+	width: 100%;
 }
 .about{
 	width: 60px;
@@ -108,7 +111,7 @@
 
 .prices{
 	text-align: right;
-	width: 220px;
+	width: 150px;
 }
 .amount{
 	font-size: 18px;
@@ -129,7 +132,7 @@
 	font-size: 14px;
 	font-family: 'Open Sans';
 	font-weight: 500;
-	color: #E44C4C;
+	color: #3D998A;
 	cursor: pointer;
 }
 
@@ -143,10 +146,22 @@ hr{
 	margin-right: 5%;
 }
 .checkout{
-	width: 35%;
+	text-align: center;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 .total{
-	width: 75%;
+	border-bottom: 1px solid #e2e2e2;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: center;
+}
+.napit {
+	border-bottom: 1px solid #e2e2e2;
+	padding: 20px 0;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: center;
 }
 .Subtotal{
 	font-size: 22px;
@@ -168,7 +183,6 @@ hr{
 	color: #3e3e3e;
 }
 .button{
-	margin-top: 10px;
 	width: 25%;
 	height: 40px;
 	border: none;
@@ -179,16 +193,13 @@ hr{
 	font-family: 'Open Sans';
 	font-weight: 500;
 	color: #ffffff;
+	outline-color: transparent !important;
 }
 .toimitusaika {
     background-color: #ffffff;
-    align-content: middle;
     overflow: hidden;
-    padding: 10px 0;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 5%;
-    width: 35%;
+    padding-bottom: 20px;
+	padding-top: 80px;
 	font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 500;
@@ -197,23 +208,25 @@ hr{
     font-weight: 300;
 	background: #3D998A;
 	border-radius: 5px;
-    padding: 0;
 	border: none;
-	padding: 10px 10px;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
 	color: #ffffff;
 	cursor: pointer;
 	font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 500;
+	outline-color: transparent !important;
 }
 .osoite {
     box-sizing: border-box;
     font-size: 16px;
 	padding: 7px;
     resize: none;
-    width: 30%;
+    width: 50%;
     border-radius: 5px;
-	margin-top: 10px;
+	margin: 10px 0;
 	font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 500;
@@ -237,54 +250,51 @@ hr{
   
 .kysymys_nappi {
 	font-weight: 300;
-    margin-top: 10px;
     background: #3D998A;
     border-radius: 5px;
-    padding: 0;
     border: none;
-    padding: 10px 10px;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
     color: #ffffff;
     cursor: pointer;
     font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 500;
+	outline-color: transparent !important;
 }
 .valmistusaika {
-	padding-top: 30px;
+    padding-top: 20px;
+	padding-bottom: 0;
     font-size: 18px;
     font-family: 'Open Sans';
     font-weight: 500;
-    color: #ffffff;
+    color: #3e3e3e;
 }
 .tilaa_nappi {
-	font-weight: 300;
-    margin-top: 10px;
+	width: 130px;
+    height: 40px;
+    border: none;
     background: #3D998A;
     border-radius: 5px;
-    padding: 0;
-    border: none;
-    padding: 10px 10px;
-    color: #ffffff;
     cursor: pointer;
     font-size: 16px;
     font-family: 'Open Sans';
     font-weight: 500;
+    color: #ffffff;
+	outline-color: transparent !important;
 }
 .kysy {
-	padding-top: 30px;
     font-size: 18px;
     font-family: 'Open Sans';
     font-weight: 500;
-    color: #ffffff;
+    color: #3e3e3e;
 }
 .Kysymykset {
-	width: 100%;
-	height: 20%;
-	align-content: center;
-	display: block;
-}
-.answer {
-	align-content: center;
+    border-bottom: 1px solid #e2e2e2;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
 }
 .copyrights {
     background-color: #414141;
@@ -346,7 +356,7 @@ hr{
 	font-size: 18px;
     font-family: 'Open Sans';
     font-weight: 500;
-    color: #3e3e3e;
+    color: #3D998A;
 }
 .tuote-laatikko {
 	width: 130px;
@@ -364,5 +374,31 @@ hr{
 }
 .summa-laatikko {
 	text-align: right;
-    width: 220px;
+    width: 150px;
+}
+.tilaamaan {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 20px;
+	padding-top: 10px;
+}
+.kysymys-box {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 20px 0;
+	text-align: center;
+}
+.nappi:hover {
+	filter: brightness(0.93);
+}
+.button:hover {
+	filter: brightness(0.93);
+}
+.kysymys_nappi:hover {
+	filter: brightness(0.93);
+}
+.tilaa_nappi:hover {
+	filter: brightness(0.93);
+}
+.answer {
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
