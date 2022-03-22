@@ -63,20 +63,31 @@
     <div class="ostoslista-body">
       <div class="CartContainer">
         <div class="Header">
-          <div class="tuote-heading">Tuote</div>
-          <div class="hinta-heading">Hinta</div>
-          <div class="maara-heading">Määrä</div>
-          <div class="summa-heading">Summa</div>
+          <div class="tuote-laatikko">
+            <div class="tuote-heading">Tuote</div>
+          </div>
+          <div class="inner_header">
+            <div class="hinta-laatikko">
+              <div class="hinta-heading">Hinta</div>
+            </div>
+            <div class="maara-laatikko">
+              <div class="maara-heading">Määrä</div>
+            </div>
+            <div class="summa-laatikko">
+              <div class="summa-heading">Summa</div>
+            </div>
+          </div>
         </div>
         <div id="pepe" class="Cart-Items">
-            <div id="gggg" class="image-box">
-              <img src="uploads/pepperoni-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+          <div class="image-box">
+            <img src="uploads/pepperoni-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
+          </div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Pepperoni pizza</div>
             </div>
-            <div class="about">
-              <h1 class="title">Pepperoni pizza</h1>
-            </div>
-            <div class="about">
-              <div class="yksittaishinta">10€</div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count" class="count">0</div>
@@ -85,139 +96,154 @@
               <div id="hinta" class="amount">10.00€</div>
               <div onclick="poista('pep')" id="poistaa" class="remove"><u>Poista</u></div>
             </div>
+          </div>
         </div>
 
         <div id="kebab" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/kebab-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+            <img src="uploads/kebab-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
           </div>
-          <div class="about">
-            <h1 class="title">Kebab pizza</h1>
-          </div>
-          <div class="about">
-            <div class="yksittaishinta">10€</div>
-          </div>
-          <div class="counter">
-            <div id="count_ke" class="count">0</div>
-          </div>
-          <div class="prices">
-            <div id="hinta_ke" class="amount">10.00€</div>
-            <div id="poistab" onclick="poista('keb')" class="remove"><u>Poista</u></div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Pepperoni pizza</div>
+            </div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
+            </div>
+            <div class="counter">
+              <div id="count_ke" class="count">0</div>
+            </div>
+            <div class="prices">
+              <div id="hinta_ke" class="amount">10.00€</div>
+              <div id="poistab" onclick="poista('keb')" class="remove"><u>Poista</u></div>
+            </div>
           </div>
         </div>
 
         <div id="jauh" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/jauheliha-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+            <img src="uploads/jauheliha-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
           </div>
-          <div class="about">
-            <h1  class="title">Jauhenliha pizza</h1>
-          </div>
-          <div class="about">
-            <div class="yksittaishinta">10€</div>
-          </div>
-          <div class="counter">
-            <div id="count_ja" class="count">0</div>
-          </div>
-          <div class="prices">
-            <div id="hinta_ja" class="amount">10.00€</div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Jauhenliha pizza</div>
+            </div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
+            </div>
+            <div class="counter">
+              <div id="count_ja" class="count">0</div>
+            </div>
+            <div class="prices">
+              <div id="hinta_ja" class="amount">10.00€</div>
             <div id="poistac" onclick="poista('jau')" class="remove"><u>Poista</u></div>
+            </div>
           </div>
-        </div>
+        </div> 
 
         <div id="kink" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/kinkku-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+            <img src="uploads/kinkku-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
           </div>
-          <div class="about">
-            <h1 class="title">Kinkku pizza</h1>
-          </div>
-          <div class="about">
-            <div class="yksittaishinta">10€</div>
-          </div>
-          <div class="counter">
-            <div id="count_ki" class="count">0</div>
-          </div>
-          <div class="prices">
-            <div id="hinta_ki" class="amount">10.00€</div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Kinkku pizza</div>
+            </div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
+            </div>
+            <div class="counter">
+              <div id="count_ki" class="count">0</div>
+            </div>
+            <div class="prices">
+              <div id="hinta_ki" class="amount">10.00€</div>
             <div id="poistad" onclick="poista('kin')" class="remove"><u>Poista</u></div>
+            </div>
           </div>
         </div>
 
         <div id="tonn" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/tonnikala-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+            <img src="uploads/kebab-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
           </div>
-          <div class="about">
-            <h1 class="title">Tonnikala pizza</h1>
-          </div>
-          <div class="about">
-            <div class="yksittaishinta">10€</div>
-          </div>
-          <div class="counter">
-            <div id="count_to" class="count">0</div>
-          </div>
-          <div class="prices">
-            <div id="hinta_to" class="amount">10.00€</div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Tonnikala pizza</div>
+            </div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
+            </div>
+            <div class="counter">
+              <div id="count_to" class="count">0</div>
+            </div>
+            <div class="prices">
+              <div id="hinta_to" class="amount">10.00€</div>
             <div id="poistae" onclick="poista('ton')" class="remove"><u>Poista</u></div>
+            </div>
           </div>
         </div>
 
         <div id="vega" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/vegaani-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+            <img src="uploads/vegaani-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
           </div>
-          <div class="about">
-            <h1 class="title">Vegaani pizza</h1>
-          </div>
-          <div class="about">
-            <div class="yksittaishinta">10€</div>
-          </div>
-          <div class="counter">
-            <div id="count_ve" class="count">0</div>
-          </div>
-          <div class="prices">
-            <div id="hinta_ve" class="amount">10.00€</div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Vegaani pizza</div>
+            </div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
+            </div>
+            <div class="counter">
+              <div id="count_ve" class="count">0</div>
+            </div>
+            <div class="prices">
+              <div id="hinta_ve" class="amount">10.00€</div>
             <div id="poistaf" onclick="poista('veg')" class="remove"><u>Poista</u></div>
+            </div>
           </div>
         </div>
 
         <div id="juus" class="Cart-Items">
           <div class="image-box">
-            <img src="uploads/juusto-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+            <img src="uploads/kebab-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
           </div>
-          <div class="about">
-            <h1 class="title">Juusto pizza</h1>
-          </div>
-          <div class="about">
-            <div class="yksittaishinta">10€</div>
-          </div>
-          <div class="counter">
-            <div id="count_ju" class="count">0</div>
-          </div>
-          <div class="prices">
-            <div id="hinta_ju" class="amount">10.00€</div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Juusto pizza</div>
+            </div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
+            </div>
+            <div class="counter">
+              <div id="count_ju" class="count">0</div>
+            </div>
+            <div class="prices">
+              <div id="hinta_ju" class="amount">10.00€</div>
             <div id="poistag" onclick="poista('juu')" class="remove"><u>Poista</u></div>
+            </div>
           </div>
         </div>
 
         <div id="fan"class="Cart-Items pad">
-            <div class="image-box">
-              <img src="uploads/fantasia-pizza.jpg" style= {{ height="110px" }} {{ width="110px" }} />
+          <div class="image-box">
+            <img src="uploads/fantasia-pizza.jpg" style= {{ height="100px" }} {{ width="100px" }} />
+          </div>
+          <div class="cart-items-ei-kuva">
+            <div class="title">
+              <div class="pizza-title">Fantasia pizza</div>
             </div>
-            <div class="about">
-              <h1 class="title">Fantasiapizza</h1>
-            </div>
-            <div class="about">
-              <div class="yksittaishinta">10€</div>
+            <div class="yksittaishinta">
+              <div class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div class="count">0</div>
             </div>
             <div class="prices">
               <div class="amount">15.00€</div>
-              <div class="remove"><u>Poista</u></div>
+                <div class="remove"><u>Poista</u></div>
             </div>
+          </div>
         </div>
       </div>
 
