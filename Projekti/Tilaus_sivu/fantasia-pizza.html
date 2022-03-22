@@ -26,6 +26,8 @@
       <link rel="stylesheet" href="css/responsive.css">
       <!-- Custom CSS -->
       <link rel="stylesheet" href="css/custom.css">
+      <!-- Fantasia-pizza CSS -->
+      <link rel="stylesheet" href="style-fantasia-pizza.css">
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
   
       <!--[if lt IE 9]>
@@ -33,7 +35,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
-    <script type="text/javascript" language="javascript" src="js/tilaa.js"></script>
 </head>
 
   <body id="page-top" class="politics_version">
@@ -49,36 +50,65 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="https://vetsuy.github.io/Projekti/"><span>Koti</span></a>
+              <a class="nav-link js-scroll-trigger active" onclick="kitiin()" href="https://vetsuy.github.io/Projekti/"><span>Koti</span></a>
             </li>
             <li class="nav-item">
           </ul>
         </div>
       </div>
     </nav>
-    
-    <div class="col-lg-12 text-center">
-      <div id="success"></div>
-      <a href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori"><button id="tilaa_nappi" class="sim-btn hvr-radial-in" type="button" onclick="tilaa()">Tilaamaa</button></a>
+
+    <div class="main">
+      <div class="left">
+        <img src="uploads/fantasia-pizza.jpg" alt="" style="float: right;width: 100%;">
+      </div>
+      <div class="right">
+        <div class="title-description">
+          <h1>Fantasia Pizza</h1>
+          <p>description</p>
+        </div>
+        <div class="customization">
+
+          <form action="koko">
+            <h1>Koko</h1>
+            <input type="radio" name="koko" id="small">
+            <label for="small">Small</label>
+            <input type="radio" name="koko" id="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" name="koko" id="large">
+            <label for="large">Large</label>
+          </form>
+
+          <form action="pohja">
+            <h1>Pohja</h1>
+            <input type="radio" name="pohja" id="normaali">
+            <label for="normaali">Normaali</label>
+            <input type="radio" name="pohja" id="gluteeniton">
+            <label for="gluteeniton">Gluteeniton</label>
+          </form>
+
+          <h1>Kastike</h1>
+          <p>valkosipulilla / ilman</p>
+
+          <div class="täyte-laatikko">
+            <h1>Täytteet</h1>
+            <p>täyte 1 / täyte 2 / täyte 3</p>
+            <h1>Juusto</h1>
+            <p>juusto 1 / juusto 2</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <div class="copyrights">
       <div class="container-fluid">
-          <div class="footer-distributed">
-              <div class="footer-left">
-                  <!--<p class="footer-links">
-                      <a href="#">Koti</a>
-                      <a href="#">Blogi</a>
-                      <a href="#">Hinnat</a>
-                      <a href="#">Tietoa</a>
-                      <a href="#">Faq</a>
-                      <a href="#">Contact</a>
-                  </p>-->
-                  <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="https://vetsuy.github.io/Projekti/">Ryhmä F Pizzeria</a> Suunnitellut : 
-                  <a href="https://github.com/Vetsuy/Vetsuy.github.io">Keuda Pojat</a></p>
-              </div>
+        <div class="footer-distributed">
+          <div class="footer-left">
+            <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
+            <a href="https://html.design/">Keuda Pojat</a></p>
           </div>
-      </div><!-- end container -->
-  </div><!-- end copyrights -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
