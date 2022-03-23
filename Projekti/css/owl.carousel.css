@@ -109,8 +109,8 @@
 }
 
 .owl-carousel .animated {
-    -webkit-animation-duration: 1000ms;
-    animation-duration: 1000ms;
+    -webkit-animation-duration: 2000ms;
+    animation-duration: 2000ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -147,13 +147,13 @@
 }
 
 .owl-height {
-    transition: height 500ms ease-in-out;
+    transition: height 1000ms ease-in-out;
 }
 
 
 .owl-carousel .owl-item .owl-lazy {
     opacity: 0;
-    transition: opacity 400ms ease;
+    transition: opacity 800ms ease;
 }
 
 .owl-carousel .owl-item img.owl-lazy {
@@ -167,7 +167,7 @@
 }
 .owl-next i,
 .owl-prev i {
-  background-color: #8dbd55;
+  background-color: #3D998A;
   width: 60px;
   height: 60px;
   font-size: 28px;

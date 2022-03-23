@@ -301,7 +301,9 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .navbar-dark{
-	background: #185a37;
+	color: #171717;
+    background: #ffffff;
+    border-bottom: 1px solid #dfe3e8;
 }
 .navbar-dark .navbar-nav .nav-itemm{
     color: #000000;
@@ -336,11 +338,11 @@ a img.aligncenter {
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
 	color: #ffffff;
-	background: #8dbd56;
+	background: #3D998A;;
 }
 .navbar-dark .navbar-nav .nav-link.active{	
 	color: #ffffff;
-	background: #8dbd56;
+	background: #3D998A;;
 }
 
 .navbar-dark .navbar-nav .nav-link.active::after {
@@ -413,7 +415,7 @@ a img.aligncenter {
 }
 
 .in-box{
-	background: #8dbd56;
+	background: #3D998A;;
 	display: inline-block;
 	padding: 40px;
 	position: relative;
@@ -471,7 +473,7 @@ a img.aligncenter {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #8dbd56;
+	background: #3D998A;;
 	border-radius: 100%;
 	-webkit-transform: scale(2);
 	transform: scale(2);
@@ -570,7 +572,9 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #185a37;;
+    color: #171717;
+    background: #ffffff;
+    border-bottom: 1px solid #dfe3e8;
 }
 
 #clouds{
@@ -766,7 +770,7 @@ xclip
 }
 .right-box-pro::before {
     content: "";
-    background: #8dbd56;
+    background: #3D998A;;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -776,7 +780,7 @@ xclip
 }
 .right-box-pro::after {
     content: "";
-    background: #8dbd56;
+    background: #3D998A;;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -800,7 +804,7 @@ xclip
 	width: 250px;
 	text-align: center;
 	line-height: 90px;
-	background: #8dbd56;
+	background: #3D998A;;
 	margin: 0 auto;
 }
 .ser-icon i{
@@ -1017,8 +1021,8 @@ xclip
 .desc {
     padding: 30px;
     position: relative;
-    background: #8dbd56;
-    border: 15px solid #8dbd56;
+    background: #3D998A;;
+    border: 15px solid #3D998A;;
 	width: calc(100% - 220px);
 	float: left;
 	margin-left: 30px;
@@ -1145,7 +1149,7 @@ xclip
     width: 120px;
     height: 120px;
     border-radius: 100px;
-    background: #8dbd56;
+    background: #3D998A;;
     position: absolute;
     bottom: -60px;
     left: 0;
@@ -1188,7 +1192,7 @@ xclip
     content: "\f00c";
     font-family: 'FontAwesome';
     font-size: 20px;
-    color: #8dbd56;
+    color: #3D998A;;
     margin-right: 10px;
 }
 .pricingTable .pricingTable-signup{
@@ -1270,7 +1274,7 @@ xclip
     content: "";
     width: 7px;
     height: 93px;
-    background: #8dbd56;
+    background: #3D998A;;
     position: absolute;
     top: -78px;
     z-index: -2;
@@ -1314,7 +1318,7 @@ xclip
 	display: inline-block;
 	width: 32px;
 	height: 32px;
-	background: #8dbd56;
+	background: #3D998A;;
 }
 .our-team .social-links li:last-child a{
     margin-right: 0;
@@ -1605,7 +1609,7 @@ xclip
 	border-radius: 10px 5px;
 }
 .message-box ul li:hover{
-	background: #8dbd56;
+	background: #3D998A;;
 }
 
 
@@ -1813,7 +1817,7 @@ hr.invis1 {
 }
 
 .filter-button-group button.active{
-	background: #8dbd56;
+	background: #3D998A;;
 	color: #ffffff;
 	
 	box-shadow: -5px 5px 0px 0px rgba(0,0,0,.9);	
@@ -1881,7 +1885,7 @@ hr.invis1 {
 	right: 0px;
 	left: 0px;
 	margin: 0 auto;
-	background: #8dbd56;
+	background: #3D998A;;
 	color: #fff;
 	padding: 10px 15px;
 	text-align: center;
@@ -1961,7 +1965,7 @@ hr.invis1 {
 	display: block;
 	text-align: center;
 	margin-bottom: 15px;
-	background: #8dbd56;
+	background: #3D998A;;
 	color: #ffffff;
 	padding: 10px 0px;
 	box-shadow: 0 7px 10px #e6e6e6;
@@ -2471,7 +2475,7 @@ select.mobile-device {
 }
 
 .contact_form .form-control {
-    background-color: #8dbd56;
+    background-color: #3D998A;;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
@@ -2656,7 +2660,7 @@ select.mobile-device {
     text-decoration: none;
 }
 .footer-distributed .footer-links a:hover{
-	color: #8dbd56;
+	color: #3D998A;;
 }
 
 .footer-distributed .footer-company-name {
@@ -2729,7 +2733,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a{
-	color: #8dbd56;
+	color: #3D998A;;
 }
 
 .footer-distributed .footer-company-name a:hover{
@@ -2784,7 +2788,7 @@ select.mobile-device {
 }
 
 .cont-dit p a:hover{
-	color: #8dbd56;
+	color: #3D998A;;
 }
 .form-inline .form-group {
     width: 100%;
@@ -2802,7 +2806,7 @@ select.mobile-device {
     border-radius: 0;
 }
 .form-inline .form-group .form-control:focus{
-	border: 1px solid #8dbd56;
+	border: 1px solid #3D998A;;
 	box-shadow: none;
 }
 
@@ -2825,7 +2829,7 @@ select.mobile-device {
     content: '';
     width: 0;
     height: 1px;
-    border: 1px dashed #8dbd56;
+    border: 1px dashed #3D998A;;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2837,7 +2841,7 @@ select.mobile-device {
     z-index: 0;
 }
 .ph-links-column li a:hover{
-	color: #8dbd56;
+	color: #3D998A;;
 }
 
 .ph-links-column li a:hover::after {
@@ -2890,7 +2894,7 @@ select.mobile-device {
 }
 
 .dmtop:hover{
-	background: #8dbd56;
+	background: #3D998A;;
 }
 
 .icon_wrap {
@@ -2932,7 +2936,7 @@ select.mobile-device {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #8dbd56;
+    background: #3D998A;;
     z-index: 11000;
     position: fixed;
     display: block

@@ -306,7 +306,7 @@ hr{
     padding: 30px;
     margin-top: 40px;
 	width: 100%;
-	position: static;
+	float: bottom;
 }
 .tuote-heading {
 	font-size: 18px;
