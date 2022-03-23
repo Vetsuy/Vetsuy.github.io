@@ -223,12 +223,12 @@ hr{
 .osoite {
     box-sizing: border-box;
     font-size: 16px;
-	padding: 7px;
     resize: none;
     width: 50%;
     border-radius: 5px;
-	margin: 10px 0;
 	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
     font-family: 'Open Sans';
     font-weight: 500;
 	background-color: white;
@@ -404,11 +404,12 @@ hr{
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
-.virhe-teksti {
-	font-size: 15px;
-	font-family: 'Open Sans';
-	font-weight: 300;
-	color: #3e3e3e;
-	width: 300px;
-	text-align: center;
+.kuljetus-ja-nouto {
+	padding-bottom: 7px;
+	margin-bottom: 10px;
+}
+.koti-osoite-padding {
+	padding-bottom: 7px;
+	margin-bottom: 10px;
+	display: none;
 }
