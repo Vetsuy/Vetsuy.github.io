@@ -609,7 +609,7 @@ xclip
     padding-right: 80px;
     padding-bottom: 40px;
     margin-top: 70px;
-    background: url(images/bg.png) repeat center center #333333;
+    background: url(images/bg.png) center #333333;
     width: 100%;
 }
 
@@ -2671,7 +2671,7 @@ select.mobile-device {
     font-weight: 300;
     margin: 0 10px;
     color: #ffffff;
-    padding: 0;
+    padding-bottom: 40px;
 }
 
 
