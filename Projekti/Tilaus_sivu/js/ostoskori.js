@@ -46,8 +46,9 @@ function hideb(){
  }
 }
 function hide(){
+    
 if(localStorage.getItem("kuljetus")=="kylla"){
-    document.getElementById("koti osoite").style.display="inline-block"
+    document.getElementById("koti_osoite").style.display="inline-block"
 }
 if(localStorage.getItem("kysy")=="kylla"){
     document.getElementById("q").style.display="block"
