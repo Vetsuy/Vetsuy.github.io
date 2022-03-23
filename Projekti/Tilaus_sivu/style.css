@@ -2671,7 +2671,18 @@ select.mobile-device {
     font-weight: 300;
     margin: 0 10px;
     color: #ffffff;
-    padding-bottom: 40px;
+}
+.copyrights {
+    background-color: #414141;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px;
+    margin-top: 40px;
+    width: 60%;
+    float: bottom;
+    margin-left: 340px;
+    margin-right: 15%;
 }
 
 
