@@ -35,6 +35,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
+    <script type="text/javascript" language="javascript" src="js/ostoskori.js"></script>
 </head>
 
   <body id="page-top" class="politics_version">
@@ -261,7 +262,7 @@
               </div>
             </div>
 
-            <div class="napit">
+            <div id="oga" class="napit">
               <div>
                 <button id="nouto" onclick="n()" class="nappi">Nouto</button>
                 <button id="kuljetus" onclick="kuljetus()" class="nappi">Kuljetus</button>
@@ -270,25 +271,25 @@
               <button id="vahvista" class="button" onclick="vahvista()">Vahvista</button>
             </div>
 
-            <div class="Kysymykset" id="q">
-              <div class="kysymys-box">
+            <div class="Kysymykset">
+              <div id="q" class="kysymys-box">
 
-                <div>
+                <div id="kss">
                   <h2 class="kysy">Kuinka kaukana asut?</h2>
                 </div>
 
-                <div class="answer">
+                <div id="ksy" class="answer">
                   <button class="kysymys_nappi" id="alle_3_km" onclick="guu()">Alle 3km</button>
                   <button class="kysymys_nappi" id="3-10_km" onclick="gaa()">3-10km</button>
                   <button class="kysymys_nappi" id="10-20_km" onclick="gii()">10-20km</button>
                 </div>
       
-                <div class="tilaamaan">
-                  <button class="tilaa_nappi" id="tilaa" onclick="tiloo()">Tilaa</button>
+                <div id="tilaa" class="tilaamaan">
+                  <button id="tilaan"class="tilaa_nappi" onclick="tiloo()">Tilaa</button>
                 </div>
             
-                <div>
-                  <h2 id="aika" class="valmistusaika">Toimituksessa menee NaN minuuttia</h2>
+                <div id="aika" >
+                  <h2 class="valmistusaika">Toimituksessa menee NaN minuuttia</h2>
                 </div>
               </div>
             </div>
