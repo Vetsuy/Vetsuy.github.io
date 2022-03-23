@@ -109,8 +109,8 @@
 }
 
 .owl-carousel .animated {
-    -webkit-animation-duration: 2000ms;
-    animation-duration: 2000ms;
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -147,13 +147,13 @@
 }
 
 .owl-height {
-    transition: height 1000ms ease-in-out;
+    transition: height 700ms ease-in-out;
 }
 
 
 .owl-carousel .owl-item .owl-lazy {
     opacity: 0;
-    transition: opacity 800ms ease;
+    transition: opacity 600ms ease;
 }
 
 .owl-carousel .owl-item img.owl-lazy {
