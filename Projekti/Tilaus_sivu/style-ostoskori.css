@@ -413,3 +413,15 @@ hr{
 	margin-bottom: 10px;
 	display: none;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(61, 153, 138);
+    border-radius: 5px;
+}
