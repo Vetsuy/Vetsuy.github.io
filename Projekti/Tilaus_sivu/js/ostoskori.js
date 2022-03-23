@@ -113,7 +113,7 @@ function vahvista(){
 if(localStorage.getItem("nouto")=="kylla"){
     localStorage.setItem("vika","kylla")
 }else if(localStorage.getItem("kuljetus")=="kylla"){
-    if(document.getElementById("koti osoite").value==""){
+    if(document.getElementById("koti_osoite").value==""){
         window.alert("jokin on pielessä")
     }else{
         localStorage.setItem("kysy","kylla")
