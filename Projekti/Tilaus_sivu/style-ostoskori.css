@@ -56,7 +56,7 @@
 	width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    display: flex;
+    display: none;
     border-bottom: 1px solid #e2e2e2;
 }
 .image-box{
@@ -238,6 +238,7 @@ hr{
 	border-top: 1px solid #d9d9d9;
 	border-left: 1px solid #d9d9d9;
 	border-right: 1px solid #d9d9d9;
+	display: none;
 }
 .question {
 	text-align: center;
@@ -386,6 +387,7 @@ hr{
     border-bottom: 1px solid #e2e2e2;
     padding: 20px 0;
 	text-align: center;
+	display: none;
 }
 .nappi:hover {
 	filter: brightness(0.90);
