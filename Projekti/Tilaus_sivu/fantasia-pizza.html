@@ -34,7 +34,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-    <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
+    <script type="text/javascript" language="javascript" src="js/fantasia.js"></script>
 </head>
 
   <body id="page-top" class="politics_version">
@@ -70,11 +70,11 @@
         <div class="koko">
           <form action="koko">
             <h1>Koko</h1>
-            <input type="radio" name="koko" id="small">
+            <input type="radio" name="koko" id="small" value="Small">
             <label for="small">Small</label>
-            <input type="radio" name="koko" id="medium">
+            <input type="radio" name="koko" id="medium" value="Medium">
             <label for="medium">Medium</label>
-            <input type="radio" name="koko" id="large">
+            <input type="radio" name="koko" id="large" value="Large">
             <label for="large">Large</label>
           </form>
         </div>
@@ -137,13 +137,13 @@
         </div>
         <div class="tilaus">
           <button>Takaisin</button>
-          <button>Lisää ostoskoriin</button>
+          <button id="lis" onclick="koko()">Lisää ostoskoriin</button>
           <button>Tilaamaan</button>
         </div>
         <div class="maara">
-          <button>+</button>
-          <span>0</span>
-          <button>-</button>
+          <button type="submit" onclick="lisaa('maara')">+</button>
+          <span id="maara">0</span>
+          <button onclick="poista('maara')">-</button>
         </div>
       </div>
     </div>
