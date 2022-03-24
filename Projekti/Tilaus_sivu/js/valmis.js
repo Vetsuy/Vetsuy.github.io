@@ -18,7 +18,7 @@ function kuvat(){
     if(localStorage.getItem("kuva")=="vege"){
      document.getElementById("kuvaa").src= "uploads/vegaani-pizza.jpg"
     }
-    if(localStorage.getItem("kuva")=="jauhe"){
+    if(localStorage.getItem("kva")=="jauhe"){
      document.getElementById("kuvaa").src= "uploads/jauheliha-pizza.jpg"
     }
 }
