@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+     
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+   
+       <!-- Site Metas -->
+      <title>Ryhmä F Pizzeria</title>  
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+  
+      <!-- Site Icons -->
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Site CSS -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/custom.css">
+      <!-- Fantasia-pizza CSS -->
+      <link rel="stylesheet" href="pizzan-muokkaus.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
+</head>
+
+  <body id="page-top" class="politics_version">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/logo.png" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" onclick="kitiin()" href="https://vetsuy.github.io/Projekti/"><span>Koti</span></a>
+            </li>
+            <li class="nav-item">
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="left">
+        <div class="image">
+          <img src="uploads/pepperoni-pizza.jpg" alt="" style="width: 60%; border-radius: 5%; margin-top: 55px;">
+        </div>
+      </div>
+      <div class="right">
+          <div class="title-description">
+            <h1 class="viiva">Pepperoni Pizza</h1>
+          </div>
+          <div class="customization">
+              <form action="koko">
+                <h2>Koko</h2>
+                <div class="keskitin">
+                  <input type="radio" name="koko" id="small" class="nappi-2">
+                  <label for="small" class="nappi" id="label_2_11_1">Small</label>
+                  <input type="radio" name="koko" id="medium" class="nappi-2">
+                  <label for="medium" class="nappi" id="label_2_11_1">Medium</label>
+                  <input type="radio" name="koko" id="large" class="nappi-2">
+                  <label for="large" class="nappi" id="label_2_11_1">Large</label>
+                </div>
+              </form>
+  
+            <form action="pohja">
+              <h2>Pohja</h2>
+              <p>(Gluteeniton tuo 2€ lisähintaa)</p>
+              <div class="keskitin">
+                <input type="radio" name="pohja" id="normaali" class="nappi-2">
+                <label for="normaali" class="nappi" id="label_2_11_1">Normaali</label>
+                <input type="radio" name="pohja" id="gluteeniton" class="nappi-2">
+                <label for="gluteeniton" class="nappi" id="label_2_11_1">Gluteeniton</label>
+              </div>
+            </form>
+
+            <div class="täyte-laatikko">
+              <label for="pepperoni" class="container nappi" id="label_2_11_1">
+                <input type="checkbox" id="pepperoni" name="tayte" class="nappi-2">
+                Pepperoni 1€
+              </label>
+              <label class="container nappi" id="label_2_11_1">
+                <input type="checkbox" name="tayte" class="nappi-2">
+                Kinkku 1€
+              </label>
+              <label class="container nappi" id="label_2_11_1">
+                <input type="checkbox" name="tayte" class="nappi-2">
+                Ananas 1€
+              </label>
+              <label class="container nappi" id="label_2_11_1">
+                <input type="checkbox" name="tayte" class="nappi-2">
+                Kana 1€
+              </label>
+              <label class="container nappi" id="label_2_11_1">
+                <input type="checkbox" name="tayte" class="nappi-2">
+                Tonnikala 1€
+              </label>
+              <label class="container nappi" id="label_2_11_1">
+                <input type="checkbox" name="tayte" class="nappi-2">
+                Jauhenliha 1€
+              </label>
+            </div>
+
+            <div>
+              <p>Yhteensä 0€</p>
+            </div>
+            <div class="keskitin">
+              <button type="button" class="nappi">Takaisin</button>
+              <button type="button" class="nappi">Lisää ostoskoriin</button>
+              <button type="button" class="nappi">Tilaamaan</button>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="copyrights">
+      <div class="container-fluid">
+        <div class="footer-distributed">
+          <div class="footer-left">
+            <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
+            <a href="https://html.design/">Keuda Pojat</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
