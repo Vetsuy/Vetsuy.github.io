@@ -18,15 +18,17 @@ function koko(){
     let kok = localStorage.getItem("fantasia")
     var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
-    for (i = 0; i < ela.length+1; i++) {
+    for (let i = 0; i < ela.length; i++) {
         if (ela[i].checked) {
             localStorage.setItem("fantasia",pohjia[i])
             localStorage.setItem("yes","ye")
             break;
         }
-        else if(2==ela.length+1){
+        else if(i==ela.length){
+            window.alert("et valinnut ")
             break
         }
+        
     }
     if(localStorage.getItem("yes")!=="ye"){
         window.alert("et valinnut pohjaa")
@@ -34,12 +36,12 @@ function koko(){
     let poh = localStorage.getItem("fantasia")
     var eli = document.getElementsByName('kastike');
     const kastikkeita = ["valkosipuli","ilman"]
-    for (i = 0; i < eli.length+1; i++) {
+    for (let i = 0; i < eli.length; i++) {
         if (eli[i].checked) {
             localStorage.setItem("fantasia",kastikkeita[i])
             localStorage.setItem("yes","yes")
             break;
-        }else if(2==eli.length+1){
+        }else if(i==eli.length){
             break
         }
     }
@@ -63,7 +65,7 @@ function koko(){
             kierros += 1
         }
         if(i==14){
-            localStorage.setItem("asdasd","hsdfgg")
+            
             if(kierros<3){
                 window.alert("et ole valinnut tarpeeksi täytteitä")
                 break
@@ -98,9 +100,9 @@ function koko(){
     localStorage.setItem("fsumma",hinta)
     localStorage.setItem("fmaara",document.getElementById("maara").textContent)
     if(localStorage.getItem("toimii")=="kylla"){
-    window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori"
+    window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori.html"
     }
-};
+}
 function pohja(){
     localStorage.setItem("pohja","e")
 }
@@ -140,15 +142,17 @@ function jatka(){
     let kok = localStorage.getItem("fantasia")
     var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
-    for (i = 0; i < ela.length+1; i++) {
+    for (let i = 0; i < ela.length+1; i++) {
         if (ela[i].checked) {
             localStorage.setItem("fantasia",pohjia[i])
             localStorage.setItem("yes","ye")
             break;
         }
-        else if(2==ela.length+1){
+        else if(i==ela.length+1){
+            window.alert("et valinnut ")
             break
         }
+        
     }
     if(localStorage.getItem("yes")!=="ye"){
         window.alert("et valinnut pohjaa")
@@ -156,12 +160,12 @@ function jatka(){
     let poh = localStorage.getItem("fantasia")
     var eli = document.getElementsByName('kastike');
     const kastikkeita = ["valkosipuli","ilman"]
-    for (i = 0; i < eli.length+1; i++) {
+    for (let i = 0; i < eli.length+1; i++) {
         if (eli[i].checked) {
             localStorage.setItem("fantasia",kastikkeita[i])
             localStorage.setItem("yes","yes")
             break;
-        }else if(2==eli.length+1){
+        }else if(i==eli.length+1){
             break
         }
     }

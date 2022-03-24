@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", kirjautunut)
-
+document.addEventListener("DOMContentLoaded", poistaa())
 function kirjaudu_ulos(){// muuttaa kaikki arvot local storagesta arvoon jota ei käytetä kun painaa kirjaudu ulos nappia
     localStorage.setItem("rek","ei");
     localStorage.setItem("arvo", "ei");
@@ -105,3 +105,13 @@ function kirjautunut(){//funktio alkaa kun sivu ladataan ja aluksi piilottaa kai
     }
 }
 
+function poistaa(){
+    localStorage.setItem("kinkkusumma","0")
+    localStorage.setItem("kebsumma","0")
+    localStorage.setItem("pepperonisumma","0")
+    localStorage.setItem("juustosumma","0")
+    localStorage.setItem("jauhelihasumma","0")
+    localStorage.setItem("tonnikalasumma","0")
+    localStorage.setItem("vegaanisumma","0")
+    localStorage.setItem("fsumma","0")
+}
