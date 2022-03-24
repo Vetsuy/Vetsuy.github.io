@@ -101,47 +101,49 @@
           <h1>Täytteet</h1>
           <form action="taytteet" class="tayte-valikko">
             <h4>Lihat:</h4>
-            <input type="checkbox" name="tayte" id="pepperoni">
-            <label for="pepperoni">Pepperoni <span class="hinta">1,5€</span></label><br>
-            <input type="checkbox" name="tayte" id="kinkku">
-            <label for="kinkku">Kinkku <span class="hinta">2€</span></label><br>
-            <input type="checkbox" name="tayte" id="jauheliha">
-            <label for="jauheliha">Jauheliha <span class="hinta">1€</span></label><br>
-            <input type="checkbox" name="tayte" id="kebab">
-            <label for="kebab">Kebab <span class="hinta">3€</span></label><br>
-            <input type="checkbox" name="tayte" id="tonnikala">
-            <label for="tonnikala">Tonnikala <span class="hinta">1€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="pepperoni">
+            <label class="container-box" for="pepperoni">Pepperoni <span class="hinta">1,5€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="kinkku">
+            <label class="container-box" for="kinkku">Kinkku <span class="hinta">2€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="jauheliha">
+            <label class="container-box"for="jauheliha">Jauheliha <span class="hinta">1€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="kebab">
+            <label class="container-box" for="kebab">Kebab <span class="hinta">3€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="tonnikala">
+            <label class="container-box" for="tonnikala">Tonnikala <span class="hinta">1€</span></label><br>
+
             <h4>Kasvikset:</h4>
-            <input type="checkbox" name="tayte" id="herkkusieni">
-            <label for="herkkusieni">Herkkusieni <span class="hinta">2€</span></label><br>
-            <input type="checkbox" name="tayte" id="jalapeno">
-            <label for="jalapeno">Jalapeno <span class="hinta">3€</span></label><br>
-            <input type="checkbox" name="tayte" id="oliivi">
-            <label for="oliivi">Oliivi <span class="hinta">1€</span></label><br>
-            <input type="checkbox" name="tayte" id="ananas">
-            <label for="ananas">Ananas <span class="hinta">1€</span></label><br>
-            <input type="checkbox" name="tayte" id="paprika">
-            <label for="paprika">Paprika <span class="hinta">1.5€</span></label>
+            <input class="checkboxx" type="checkbox" name="tayte" id="herkkusieni">
+            <label class="container-box" for="herkkusieni">Herkkusieni <span class="hinta">2€</span></label><br>
+            <inputclass="checkboxx"  type="checkbox" name="tayte" id="jalapeno">
+            <label class="container-box" for="jalapeno">Jalapeno <span class="hinta">3€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="oliivi">
+            <label class="container-box" for="oliivi">Oliivi <span class="hinta">1€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="ananas">
+            <label class="container-box" for="ananas">Ananas <span class="hinta">1€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="paprika">
+            <label class="container-box" for="paprika">Paprika <span class="hinta">1.5€</span></label>
+            
             <h4>Juustot:</h4>
-            <input type="checkbox" name="tayte" id="lisajuusto">
-            <label for="lisajuusto">Lisäjuusto <span class="hinta">1€</span></label><br>
-            <input type="checkbox" name="tayte" id="sinihome">
-            <label for="sinihome">Sinihome <span class="hinta">1€</span></label><br>
-            <input type="checkbox" name="tayte" id="feta">
-            <label for="feta">Feta <span class="hinta">1,5€</span></label><br>
-            <input type="checkbox" name="tayte" id="mozzarella">
-            <label for="mozzarella">Mozzarella <span class="hinta">3€</span></label><br>
-            <input type="checkbox" name="tayte" id="parmesaani">
-            <label for="parmesaani">Parmesaani <span class="hinta">2€</span></label>
+            <input class="cb" type="checkbox" name="tayte" id="lisajuusto">
+            <label class="container-box" for="lisajuusto">Lisäjuusto <span class="hinta">1€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="sinihome">
+            <label class="container-box" for="sinihome">Sinihome <span class="hinta">1€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="feta">
+            <label class="container-box" for="feta">Feta <span class="hinta">1,5€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="mozzarella">
+            <label class="container-box" for="mozzarella">Mozzarella <span class="hinta">3€</span></label><br>
+            <input class="checkboxx" type="checkbox" name="tayte" id="parmesaani">
+            <label class="container-box" for="parmesaani">Parmesaani <span class="hinta">2€</span></label>
           </form>
         </div>
         <div class="tilaus">
           <button class="nappi">Takaisin</button>
           <button class="nappi" id="lis" onclick="koko()">Lisää ostoskoriin</button>
           <button class="nappi">Tilaamaan</button>
-          <button class="nappi" type="submit" onclick="lisaa('maara')">+</button>
-          <span id="maara">0</span>
           <button class="nappi" onclick="poista('maara')">-</button>
+          <span id="maara">0</span>
+          <button class="nappi" type="submit" onclick="lisaa('maara')">+</button>
         </div>
       </div>
     </div>
