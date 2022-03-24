@@ -28,6 +28,7 @@
       <link rel="stylesheet" href="css/custom.css">
       <!-- Fantasia-pizza CSS -->
       <link rel="stylesheet" href="style-fantasia-pizza.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
   
       <!--[if lt IE 9]>
@@ -60,12 +61,12 @@
 
     <div class="main">
       <div class="left">
-        <img src="uploads/fantasia-pizza.jpg" alt="" class="tilaus-kuva">
+        <img src="uploads/fantasia-pizza-02.jpg" alt="" class="tilaus-kuva">
       </div>
       <div class="right">
         <div class="otsikko-kuvaus">
           <h1>Fantasia Pizza</h1>
-          <p>description</p>
+          <p>Luo juuri sinun makuun sopiva pizza</p>
         </div>
         <div class="koko">
           <form action="koko">
@@ -133,22 +134,19 @@
             <input type="checkbox" name="tayte" id="parmesaani">
             <label for="parmesaani">Parmesaani <span class="hinta">2€</span></label>
           </form>
-          <p>Yhteensä 0€</p>
         </div>
         <div class="tilaus">
-          <button>Takaisin</button>
-          <button id="lis" onclick="koko()">Lisää ostoskoriin</button>
-          <button>Tilaamaan</button>
-        </div>
-        <div class="maara">
-          <button type="submit" onclick="lisaa('maara')">+</button>
+          <button class="nappi">Takaisin</button>
+          <button class="nappi" id="lis" onclick="koko()">Lisää ostoskoriin</button>
+          <button class="nappi">Tilaamaan</button>
+          <button class="nappi" type="submit" onclick="lisaa('maara')">+</button>
           <span id="maara">0</span>
-          <button onclick="poista('maara')">-</button>
+          <button class="nappi" onclick="poista('maara')">-</button>
         </div>
       </div>
     </div>
 
-    <div class="copyrights">
+    <div class="ala-tiedot">
       <div class="container-fluid">
         <div class="footer-distributed">
           <div class="footer-left">
