@@ -30,7 +30,7 @@ function kuvat(){
     }
 }
 function muokkaus(){
-    localStorage.setItem("toimii","e")
+    localStorage.setItem("toimii","ee")
     let a = localStorage.getItem("kuva")
     localStorage.setItem("yes","e")
     var ele = document.getElementsByName('koko');
