@@ -100,7 +100,6 @@ localStorage.setItem("kuljetus", "kylla")
 localStorage.setItem("nouto","ei")
 window.location.reload();
 }
-
 function n(){
 localStorage.setItem("kuljetus", "ei")
 localStorage.setItem("nouto","kylla")
