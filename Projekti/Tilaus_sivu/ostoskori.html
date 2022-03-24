@@ -34,7 +34,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-    <script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
     <script type="text/javascript" language="javascript" src="js/ostoskori.js"></script>
 </head>
 
@@ -88,7 +87,7 @@
               <div class="pizza-title">Pepperoni Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="pehinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count" class="count">0</div>
@@ -109,7 +108,7 @@
               <div class="pizza-title">Kebab Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="kehinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count_ke" class="count">0</div>
@@ -130,7 +129,7 @@
               <div class="pizza-title">Jauheliha Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="jahinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count_ja" class="count">0</div>
@@ -151,7 +150,7 @@
               <div class="pizza-title">Kinkku Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="kihinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count_ki" class="count">0</div>
@@ -172,7 +171,7 @@
               <div class="pizza-title">Tonnikala Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="tohinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count_to" class="count">0</div>
@@ -193,7 +192,7 @@
               <div class="pizza-title">Vegaani Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="vehinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count_ve" class="count">0</div>
@@ -214,7 +213,7 @@
               <div class="pizza-title">Juusto Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">10€</div>
+              <div id="juhinta" class="yksittais">10€</div>
             </div>
             <div class="counter">
               <div id="count_ju" class="count">0</div>
@@ -235,14 +234,14 @@
               <div class="pizza-title">Fantasia Pizza</div>
             </div>
             <div class="yksittaishinta">
-              <div class="yksittais">15€</div>
+              <div id="fahinta" class="yksittais">15€</div>
             </div>
             <div class="counter">
-              <div class="count">0</div>
+              <div id="count_f" class="count">0</div>
             </div>
             <div class="prices">
-              <div class="amount">15.00€</div>
-                <div class="remove"><u>Poista</u></div>
+              <div id="hinta_f" class="amount"></div>
+                <div id="poistah" onclick="poista('fmaara')" class="remove"><u>Poista</u></div>
             </div>
           </div>
         </div>
