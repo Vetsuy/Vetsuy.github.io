@@ -314,6 +314,7 @@ a img.aligncenter {
     border: none;
     outline: none;
     font-weight: 500;
+    cursor: pointer;
 }
 .navbar-dark .navbar-nav .nav-ite{
     color: #3e3e3e;
@@ -324,6 +325,7 @@ a img.aligncenter {
     outline: none;
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
 }
 .navbar-dark .navbar-nav .nav-link{
 	color: #3e3e3e;
@@ -773,7 +775,7 @@ xclip
 }
 .right-box-pro::before {
     content: "";
-    background: #3D998A;;
+    background: #f2f3f5;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -783,7 +785,7 @@ xclip
 }
 .right-box-pro::after {
     content: "";
-    background: #3D998A;;
+    background: #f2f3f5;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -3023,4 +3025,22 @@ select.mobile-device {
 ::-webkit-scrollbar-thumb{
     background-color: rgb(61, 153, 138) !important;
     border-radius: 5px !important;
+}
+.nimi-juttu {
+    color: #3e3e3e;
+    outline-color: #3D998A;
+    background-color: white;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+.salasana-juttu {
+    color: #3e3e3e;
+    outline-color: #3D998A;
+    background-color: white;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
 }
