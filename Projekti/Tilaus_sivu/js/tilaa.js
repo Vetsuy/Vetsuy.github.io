@@ -24,3 +24,7 @@ function tilaa(){
     }
     }
 }
+function valitse(a){
+    localStorage.setItem("kuva",a)
+    window.location.href="https://vetsuy.github.io/Projekti//Tilaus_sivu/pizzan-muokkaus.html"
+}
