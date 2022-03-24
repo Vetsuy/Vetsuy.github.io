@@ -1,4 +1,5 @@
 function koko(){  
+    localStorage.setItem("toimii","e")
     localStorage.setItem("yes","e")
     var ele = document.getElementsByName('koko');
     const kokoja = ["small","medium","large"]
@@ -65,9 +66,12 @@ function koko(){
             localStorage.setItem("asdasd","hsdfgg")
             if(kierros<3){
                 window.alert("et ole valinnut tarpeeksi täytteitä")
+                break
             }else if(kierros>5){
                 window.alert("valitsit liikaa täytteitä")
+                break
             }
+            localStorage.setItem("toimii","kylla")
             break;
         }
     }
@@ -93,7 +97,9 @@ function koko(){
     hinta = hinta*parseInt(document.getElementById("maara").textContent)
     localStorage.setItem("fsumma",hinta)
     localStorage.setItem("fmaara",document.getElementById("maara").textContent)
+    if(localStorage.getItem("toimii")=="kylla"){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori"
+    }
 };
 function pohja(){
     localStorage.setItem("pohja","e")
@@ -115,6 +121,7 @@ function takaisin(){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/tilausprosessi.html"
 }
 function jatka(){
+        localStorage.setItem("toimii","e")
     localStorage.setItem("yes","e")
     var ele = document.getElementsByName('koko');
     const kokoja = ["small","medium","large"]
@@ -181,9 +188,12 @@ function jatka(){
             localStorage.setItem("asdasd","hsdfgg")
             if(kierros<3){
                 window.alert("et ole valinnut tarpeeksi täytteitä")
+                break
             }else if(kierros>5){
                 window.alert("valitsit liikaa täytteitä")
+                break
             }
+            localStorage.setItem("toimii","kylla")
             break;
         }
     }
@@ -209,5 +219,7 @@ function jatka(){
     hinta = hinta*parseInt(document.getElementById("maara").textContent)
     localStorage.setItem("fsumma",hinta)
     localStorage.setItem("fmaara",document.getElementById("maara").textContent)
+    if(localStorage.getItem("toimii")=="kylla"){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/tilausprosessi.html"
+    }
 }
