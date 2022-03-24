@@ -50,7 +50,7 @@ if(localStorage.getItem("yes")!=="y"){
 let kok = localStorage.getItem(a)
 var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
-    for (let i = 0; i < ela.length+1; i++) {
+    for (let i = 0; i < 4; i++) {
         if (ela[i].checked) {
             localStorage.setItem(a,pohjia[i])
             localStorage.setItem("yes","ye")
