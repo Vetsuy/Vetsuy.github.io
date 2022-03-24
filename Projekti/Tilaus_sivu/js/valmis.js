@@ -22,3 +22,7 @@ function kuvat(){
      document.getElementById("kuvaa").src= "uploads/jauheliha-pizza.jpg"
     }
 }
+
+function fantasia_valitse() {
+    window.location.href="https://vetsuy.github.io/Projekti//Tilaus_sivu/fantasia-pizza.html"
+}
