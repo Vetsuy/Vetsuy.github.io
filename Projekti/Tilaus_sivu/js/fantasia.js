@@ -1,42 +1,74 @@
 
 function koko(){  
+    localStorage.setItem("yes","e")
     var ele = document.getElementsByName('koko');
     const kokoja = ["small","medium","large"]
-    for (i = 0; i <= ele.length; i++) {
+    for (i = 0; i < ele.length; i++) {
+        let tar = 0;
         if (ele[i].checked) {
             localStorage.setItem("fantasia",kokoja[i])
+            tar = 1
+            localStorage.setItem("yes","y")
             break;
         }
+    }
+    if(localStorage.getItem("yes")!=="y"){
+        window.alert("et valinnut kokoa")
     }
     let kok = localStorage.getItem("fantasia")
     var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
-    for (i = 0; i <= ela.length; i++) {
+    for (i = 0; i < ela.length+1; i++) {
         if (ela[i].checked) {
             localStorage.setItem("fantasia",pohjia[i])
+            localStorage.setItem("yes","ye")
             break;
         }
+        else if(2==ela.length+1){
+            break
+        }
+    }
+    if(localStorage.getItem("yes")!=="ye"){
+        window.alert("et valinnut pohjaa")
     }
     let poh = localStorage.getItem("fantasia")
     var eli = document.getElementsByName('kastike');
     const kastikkeita = ["valkosipuli","ilman"]
-    for (i = 0; i <= eli.length; i++) {
+    for (i = 0; i < eli.length+1; i++) {
         if (eli[i].checked) {
             localStorage.setItem("fantasia",kastikkeita[i])
+            localStorage.setItem("yes","yes")
             break;
+        }else if(2==eli.length+1){
+            break
         }
+    }
+    if(localStorage.getItem("yes")!=="yes"){
+        window.alert("et valinnut kastiketta")
     }
     let kast = localStorage.getItem("fantasia")
     let ab = [kok,poh,kast]
+    if(ab.length!==3){
+        window.alert("jokin on vialla")
+    }
     let a = []
+    let kierros = 0;
     var elo = document.getElementsByName('tayte');
     const taytteet = ["pepperoni","kinkku","jauheliha","kebab","tonnikala","herkkusieni","jalopenio","oliivi","ananas","paprika","lisajuusto","sinihome","feta","mozzarella","parmesaani"]
     for (let i = 0; i < elo.length; i++) {
+        
         if (elo[i].checked) {
             a.push(taytteet[i])
             localStorage.setItem("fantasia",a)
+            kierros += 1
         }
-        if(i==15){
+        if(i==14){
+            localStorage.setItem("asdasd","hsdfgg")
+            if(kierros<3){
+                window.alert("et ole valinnut tarpeeksi täytteitä")
+            }else if(kierros>5){
+                window.alert("valitsit liikaa täytteitä")
+            }
             break;
         }
     }
@@ -58,8 +90,11 @@ function koko(){
     }else if(kast="valkosipuli"){
         hinta += 1
     }
+    localStorage.setItem("fhinta",hinta )
     hinta = hinta*parseInt(document.getElementById("maara").textContent)
-
+    localStorage.setItem("fsumma",hinta)
+    localStorage.setItem("fmaara",document.getElementById("maara").textContent)
+    window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori"
 };
 function pohja(){
     localStorage.setItem("pohja","e")

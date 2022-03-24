@@ -3,15 +3,19 @@ document.addEventListener("DOMContentLoaded",hidea)
 document.addEventListener("DOMContentLoaded",hideb)
 function hidea(){
     let as = Object.keys(localStorage)
-    let a = ["pep","juu","kin","jau","keb","ton","veg"]
-    let c = ["count","count_ju","count_ki","count_ja","count_ke","count_to","count_ve"]
-    let e = ["hinta","hinta_ju","hinta_ki","hinta_ja","hinta_ke","hinta_to","hinta_ve"]
+    let a = ["pep","juu","kin","jau","keb","ton","veg","fmaara"]
+    let c = ["count","count_ju","count_ki","count_ja","count_ke","count_to","count_ve","count_f"]
+    let e = ["hinta","hinta_ju","hinta_ki","hinta_ja","hinta_ke","hinta_to","hinta_ve","hinta_f"]
+    let v = ["pehinta","juhinta","kihinta","jahinta","kehinta","tohinta","vehinta","fahinta"]
+    let x = ["phinta","jhinta","khinta","jhinta","khinta","thinta","vhinta","fhinta"]
     for (let i = 0;i<as.length;i++){
-        for (u=0;u<=6;u++){
+        for (u=0;u<=7;u++){
         if(as=a[u]){
             let b = localStorage.getItem(a[u])
             document.getElementById(c[u]).textContent = b
-            let d = b*10
+            let d = localStorage.getItem(x[u])
+            document.getElementById(v[u]).textContent = d+",00€"
+            d = d*parseInt(localStorage.getItem(a[u]))
             document.getElementById(e[u]).textContent = d+",00€"
         }
     }
@@ -44,6 +48,9 @@ function hideb(){
  if(localStorage.getItem("veg")!=="0"){
      document.getElementById("vega").style.display="flex"
  }
+ if(localStorage.getItem("fmaara")!=="0"){
+    document.getElementById("fan").style.display="flex"
+}
 }
 function hide(){
     
@@ -86,16 +93,6 @@ if(localStorage.getItem("aika")=="kylla"){
 }
 function poista(h){
     localStorage.setItem(h,0)
-    window.location.reload();
-}
-function poista_kaikki(){
-    localStorage.setItem("pep",0)
-    localStorage.setItem("juu",0)
-    localStorage.setItem("kin",0)
-    localStorage.setItem("jau",0)
-    localStorage.setItem("keb",0)
-    localStorage.setItem("ton",0)
-    localStorage.setItem("veg",0)
     window.location.reload();
 }
 function kuljetus(){
