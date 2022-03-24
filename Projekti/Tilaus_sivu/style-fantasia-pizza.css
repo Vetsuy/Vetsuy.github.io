@@ -76,3 +76,21 @@
     color: #ffffff;
     outline-color: transparent !important;
 }
+.tayte-max {
+    padding-bottom: 15px;
+    color: #094C59;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #094C59;
+    border-radius: 5px;
+}

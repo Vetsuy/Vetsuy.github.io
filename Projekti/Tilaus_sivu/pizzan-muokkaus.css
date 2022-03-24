@@ -99,3 +99,15 @@ input[name="koko"]:checked + #label_2_11_1 {
     border-radius: 5%;
     height: 610px;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #094C59;
+    border-radius: 5px;
+}
