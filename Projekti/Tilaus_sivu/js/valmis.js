@@ -63,6 +63,7 @@ var ela = document.getElementsByName('pohja');
         }
         
     }
+    window.alert("et valinnut pohjaa")
     if(localStorage.getItem("yes")!=="ye"){
         window.alert("et valinnut pohjaa")
     }
