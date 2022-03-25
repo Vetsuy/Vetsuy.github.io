@@ -194,5 +194,5 @@ function kitiin(){
     localStorage.setItem("jauhe","0")
     localStorage.setItem("tonni","0")
     localStorage.setItem("vege","0")
-    localStorage.setItem("fhinta","0")
+    localStorage.setItem("fsumma","0")
 }
