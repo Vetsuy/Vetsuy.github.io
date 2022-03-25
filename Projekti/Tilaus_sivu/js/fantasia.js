@@ -99,6 +99,13 @@ function koko(){
     hinta = hinta*parseInt(document.getElementById("maara").textContent)
     localStorage.setItem("fsumma",hinta)
     localStorage.setItem("fmaara",document.getElementById("maara").textContent)
+    let faika;
+    if(poh=="norm"){
+        faika = 8
+    }else{
+        faika = 11
+    }
+    localStorage.setItem("faika",faika)
     if(localStorage.getItem("toimii")=="kylla"){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori.html"
     }
@@ -223,6 +230,12 @@ function jatka(){
     hinta = hinta*parseInt(document.getElementById("maara").textContent)
     localStorage.setItem("fsumma",hinta)
     localStorage.setItem("fmaara",document.getElementById("maara").textContent)
+    let faika;
+    if(poh=="norm"){
+        faika = 8
+    }else{
+        faika = 11
+    }
     if(localStorage.getItem("toimii")=="kylla"){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/tilausprosessi.html"
     }
