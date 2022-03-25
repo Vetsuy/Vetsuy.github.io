@@ -107,11 +107,11 @@ function kirjautunut(){//funktio alkaa kun sivu ladataan ja aluksi piilottaa kai
 
 function poistaa(){
     localStorage.setItem("kinkkusumma","0")
-    localStorage.setItem("kebsumma","0")
+    localStorage.setItem("kebabsumma","0")
     localStorage.setItem("pepperonisumma","0")
     localStorage.setItem("juustosumma","0")
-    localStorage.setItem("jauhelihasumma","0")
-    localStorage.setItem("tonnikalasumma","0")
-    localStorage.setItem("vegaanisumma","0")
+    localStorage.setItem("jauhehasumma","0")
+    localStorage.setItem("tonnisumma","0")
+    localStorage.setItem("vegesumma","0")
     localStorage.setItem("fsumma","0")
 }

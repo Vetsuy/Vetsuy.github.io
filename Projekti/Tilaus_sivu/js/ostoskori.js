@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded",hidea)
 document.addEventListener("DOMContentLoaded",hideb)
 function hidea(){
     let as = Object.keys(localStorage)
-    let a = ["pep","juu","kin","jau","keb","ton","veg","fmaara"]
+    let a = ["pepperonisumma","juustosumma","kinkusumma","jauhesumma","kebabsumma","tonnisumma","vegesumma","fmaara"]
     let c = ["count","count_ju","count_ki","count_ja","count_ke","count_to","count_ve","count_f"]
     let e = ["hinta","hinta_ju","hinta_ki","hinta_ja","hinta_ke","hinta_to","hinta_ve","hinta_f"]
     let v = ["pehinta","juhinta","kihinta","jahinta","kehinta","tohinta","vehinta","fahinta"]
-    let x = ["phinta","jhinta","khinta","jhinta","khinta","thinta","vhinta","fhinta"]
+    let x = ["pepperoni","juusto","kinkku","jauhe","kebab","tonni","vege","fhinta"]
     for (let i = 0;i<as.length;i++){
         for (u=0;u<=7;u++){
         if(as=a[u]){
@@ -27,25 +27,25 @@ function hidea(){
     localStorage.setItem("fuu",g)
 }
 function hideb(){
-    if(localStorage.getItem("pep")!=="0"){
+    if(localStorage.getItem("pepperonisumma")!=="0"){
         document.getElementById("pepe").style.display="flex"
     }
-    if(localStorage.getItem("juu")!=="0"){
+    if(localStorage.getItem("juustosumma")!=="0"){
      document.getElementById("juus").style.display="flex"
  }
- if(localStorage.getItem("kin")!=="0"){
+ if(localStorage.getItem("kinkusumma")!=="0"){
      document.getElementById("kink").style.display="flex"
  }
- if(localStorage.getItem("jau")!=="0"){
+ if(localStorage.getItem("jauhesumma")!=="0"){
      document.getElementById("jauh").style.display="flex"
  }
- if(localStorage.getItem("keb")!=="0"){
+ if(localStorage.getItem("kebabsumma")!=="0"){
      document.getElementById("kebab").style.display="flex"
  }
- if(localStorage.getItem("ton")!=="0"){
+ if(localStorage.getItem("tonnisumma")!=="0"){
      document.getElementById("tonn").style.display="flex"
  }
- if(localStorage.getItem("veg")!=="0"){
+ if(localStorage.getItem("vegesumma")!=="0"){
      document.getElementById("vega").style.display="flex"
  }
  if(localStorage.getItem("fmaara")!=="0"){
