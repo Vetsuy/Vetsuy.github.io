@@ -59,7 +59,8 @@ var ela = document.getElementsByName('pohja');
             localStorage.setItem("toimii","kylla")
             break;
         }
-        else if(i==2){
+        else if(i==1){
+            
             break
         }
         
