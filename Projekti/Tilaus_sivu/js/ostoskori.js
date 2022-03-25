@@ -124,8 +124,8 @@ function vahvista(){
 if(localStorage.getItem("nouto")=="kylla"){
     localStorage.setItem("vika","kylla")
 }else if(localStorage.getItem("kuljetus")=="kylla"){
-    if(document.getElementById("koti_osoite").value==""){
-        window.alert("jokin on pielessä")
+    if(document.getElementById("kot").value==""){
+        window.alert("laita koti osoite")
     }else{
         localStorage.setItem("kysy","kylla")
     }
