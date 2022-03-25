@@ -9,7 +9,7 @@ function hidea(){
     let v = ["pehinta","juhinta","kihinta","jahinta","kehinta","tohinta","vehinta","fahinta"]
     let x = ["pepperoni","juusto","kinkku","jauhe","kebab","tonni","vege","fhinta"]
     for (let i = 0;i<as.length;i++){
-        for (u=0;u<=7;u++){
+        for (u=0;u<=8;u++){
         if(as=a[u]){
             let b = localStorage.getItem(a[u])
             document.getElementById(c[u]).textContent = b
