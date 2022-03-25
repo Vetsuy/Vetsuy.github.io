@@ -91,6 +91,9 @@ var ela = document.getElementsByName('pohja');
     }else if(poh=="gluteeniton"){
         hinta += 2
     }
+    if(localStorage.getItem("tayte")=="kylla"){
+        hinta += 1
+    }
     let h = a
     let j = "summa"
     let p = h+j
