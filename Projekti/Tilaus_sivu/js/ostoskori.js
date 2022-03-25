@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",hidea)
 document.addEventListener("DOMContentLoaded",hideb)
 function hidea(){
     let as = Object.keys(localStorage)
-    let a = ["pepperonisumma","juustosumma","kinkusumma","jauhesumma","kebabsumma","tonnisumma","vegesumma","fmaara"]
+    let a = ["pepperonisumma","juustosumma","kinkkusumma","jauhesumma","kebabsumma","tonnisumma","vegesumma","fmaara"]
     let c = ["count","count_ju","count_ki","count_ja","count_ke","count_to","count_ve","count_f"]
     let e = ["hinta","hinta_ju","hinta_ki","hinta_ja","hinta_ke","hinta_to","hinta_ve","hinta_f"]
     let v = ["pehinta","juhinta","kihinta","jahinta","kehinta","tohinta","vehinta","fahinta"]
@@ -33,7 +33,7 @@ function hideb(){
     if(localStorage.getItem("juustosumma")!=="0"){
      document.getElementById("juus").style.display="flex"
  }
- if(localStorage.getItem("kinkusumma")!=="0"){
+ if(localStorage.getItem("kinkkusumma")!=="0"){
      document.getElementById("kink").style.display="flex"
  }
  if(localStorage.getItem("jauhesumma")!=="0"){
@@ -72,9 +72,10 @@ if(localStorage.getItem("aika")=="kylla"){
     document.getElementById("ksy").style.display="none"
     document.getElementById("kss").style.display="none"
     document.getElementById("tilaa").style.display="none"
-    let p = localStorage.getItem("fuu")
-    let r = p*10+parseInt(localStorage.getItem("a3"))+parseInt(localStorage.getItem("310"))+parseInt(localStorage.getItem("1020"))
-    document.getElementById("aika").textContent = "Toimituksessa menee "+r+" minuuttia"
+    let x =  parseInt(localStorage.getItem("fmaara"))*parseInt(localStorage.getItem("faika"))
+    let v = parseInt(localStorage.getItem("a3"))+parseInt(localStorage.getItem("310"))+parseInt(localStorage.getItem("1020"))
+    let z = v+x+ parseInt(localStorage.getItem("pepperoniaika"))+parseInt(localStorage.getItem("juustoaika"))+parseInt(localStorage.getItem("kinkkuaika"))+parseInt(localStorage.getItem("jauheaika"))+parseInt(localStorage.getItem("kebabaika"))+parseInt(localStorage.getItem("tonniaika"))+parseInt(localStorage.getItem("vegeaika"))
+    document.getElementById("aika").textContent = "Toimituksessa menee "+z+" minuuttia"
 
 }if(localStorage.getItem("vika")=="kylla"){
     document.getElementById("oga").style.display="none"
@@ -82,8 +83,8 @@ if(localStorage.getItem("aika")=="kylla"){
     document.getElementById("ksy").style.display="none"
     document.getElementById("kss").style.display="none"
     document.getElementById("tilaa").style.display="none"
-    let x = localStorage.getItem("fuu")
-    let z = x*10
+    let x =  parseInt(localStorage.getItem("fmaara"))*parseInt(localStorage.getItem("faika"))
+    let z = x+ parseInt(localStorage.getItem("pepperoniaika"))+parseInt(localStorage.getItem("juustoaika"))+parseInt(localStorage.getItem("kinkkuaika"))+parseInt(localStorage.getItem("jauheaika"))+parseInt(localStorage.getItem("kebabaika"))+parseInt(localStorage.getItem("tonniaika"))+parseInt(localStorage.getItem("vegeaika"))
     document.getElementById("aika").textContent = "pizzaan menee "+z+" minuuttia"
 }if(localStorage.getItem("ti")=="kylla"){
     document.getElementById("q").style.display="block"
@@ -92,7 +93,13 @@ if(localStorage.getItem("aika")=="kylla"){
 }
 }
 function poista(h){
-    localStorage.setItem(h,0)
+    localStorage.setItem(h+"summa",0)
+    localStorage.setItem(h+"aika",0)
+    window.location.reload();
+}
+function poistaf(){
+    localStorage.setItem("fmaara",0)
+    localStorage.setItem("faika",0)
     window.location.reload();
 }
 function kuljetus(){
@@ -156,4 +163,12 @@ function kitiin(){
     localStorage.setItem("kysy","eeeee")
     localStorage.setItem("aika","eeeee")
     localStorage.setItem("tek","eeeeee")
+    localStorage.setItem("pepperoniaika",0)
+    localStorage.setItem("juustoaika",0)
+    localStorage.setItem("kinkkuaika",0)
+    localStorage.setItem("jauheaika",0)
+    localStorage.setItem("kebabaika",0)
+    localStorage.setItem("tonniaika",0)
+    localStorage.setItem("vegeaika",0)
+    localStorage.setItem("faika",0)
 }

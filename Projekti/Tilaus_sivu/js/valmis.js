@@ -99,6 +99,17 @@ var ela = document.getElementsByName('pohja');
     let p = h+j
     localStorage.setItem(a,hinta )
     localStorage.setItem(p,1)
+    let aika;
+   
+    if(poh=="norm"){
+        aika = 10;
+    }else{
+        aika = 13;
+    }
+    if(localStorage.getItem("tayte")=="kylla"){
+        aika += 1
+    }
+    localStorage.setItem(h+"aika",aika)
     if(localStorage.getItem("toimii")=="kylla"){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/ostoskori.html"
     }
