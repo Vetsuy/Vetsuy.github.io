@@ -199,3 +199,6 @@ var ela = document.getElementsByName('pohja');
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/tilausprosessi.html"
     }
 }
+function takas(){
+    window.location,href="https://vetsuy.github.io/Projekti/Tilaus_sivu/tilausprosessi.html"
+}
