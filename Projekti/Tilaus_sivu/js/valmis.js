@@ -58,6 +58,7 @@ var ela = document.getElementsByName('pohja');
             break;
         }
         else if(i==ela.length){
+            window.alert("et valinnut pohjaa")
             break
         }
         
