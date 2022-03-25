@@ -133,7 +133,7 @@ var ela = document.getElementsByName('pohja');
         
     }
     if(localStorage.getItem("yes")!=="ye"){
-        window.alert("et valinnut pohjaa")
+        
     }
     let poh = localStorage.getItem(a)
     var elo = document.getElementsByName('tayte');
