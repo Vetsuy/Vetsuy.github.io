@@ -51,15 +51,15 @@ if(localStorage.getItem("yes")!=="y"){
 let kok = localStorage.getItem(a)
 var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
-    for (let i = 0; i < 4; i++) {
-        window.alert("et valinnut pohjaa")
+    for (let i = 0; i < 2; i++) {
+        
         if (ela[i].checked) {
             localStorage.setItem(a,pohjia[i])
             localStorage.setItem("yes","ye")
             localStorage.setItem("toimii","kylla")
             break;
         }
-        else if(i==ela.length){
+        else if(i==1){
             window.alert("et valinnut pohjaa")
             break
         }
