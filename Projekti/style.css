@@ -499,11 +499,13 @@ a img.aligncenter {
 	position: absolute;
 	top: 50%;
 	left: 0px;
+    display: none;
 }
 .slider-new-2.owl-carousel .owl-nav .owl-next{
 	position: absolute;
 	top: 50%;
 	right: 0px;
+    display: none;
 }
 
 .slider-new-2.owl-carousel .owl-item.active .slider-img-full img{
