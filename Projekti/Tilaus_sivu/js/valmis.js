@@ -115,7 +115,8 @@ var ela = document.getElementsByName('pohja');
     }
 }
 function finale(){
-    localStorage.setItem("toimii","e")
+    localStorage.setItem("tayte","ee")
+    localStorage.setItem("toimii","ee")
     let a = localStorage.getItem("kuva")
     localStorage.setItem("yes","e")
     var ele = document.getElementsByName('koko');
@@ -135,14 +136,16 @@ if(localStorage.getItem("yes")!=="y"){
 let kok = localStorage.getItem(a)
 var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
-    for (let i = 0; i < ela.length; i++) {
+    for (let i = 0; i < 2; i++) {
+        
         if (ela[i].checked) {
             localStorage.setItem(a,pohjia[i])
             localStorage.setItem("yes","ye")
+            localStorage.setItem("toimii","kylla")
             break;
         }
-        else if(i==ela.length){
-            window.alert("et valinnut ")
+        else if(i==1){
+            
             break
         }
         
@@ -153,16 +156,13 @@ var ela = document.getElementsByName('pohja');
     let poh = localStorage.getItem(a)
     var elo = document.getElementsByName('tayte');
     const taytteet = ["pepperoni","kinkku","ananas","kana","tonnikala","jauheliha"]
-    for (let i = 0; i < elo.length; i++) {
+    for (let i = 0; i < 6; i++) {
         
         if (elo[i].checked) {
             localStorage.setItem("tayte","kylla")
         }
     }
-    let ab = [kok,poh]
-    if(ab.length==2){
-        localStorage.setItem("toimii","kylla")
-    }
+    
     let hinta = 10
     if(kok=="small"){
         hinta -= 2
@@ -176,11 +176,25 @@ var ela = document.getElementsByName('pohja');
     }else if(poh=="gluteeniton"){
         hinta += 2
     }
+    if(localStorage.getItem("tayte")=="kylla"){
+        hinta += 1
+    }
     let h = a
     let j = "summa"
     let p = h+j
     localStorage.setItem(a,hinta )
     localStorage.setItem(p,1)
+    let aika;
+   
+    if(poh=="norm"){
+        aika = 10;
+    }else{
+        aika = 13;
+    }
+    if(localStorage.getItem("tayte")=="kylla"){
+        aika += 1
+    }
+    localStorage.setItem(h+"aika",aika)
     if(localStorage.getItem("toimii")=="kylla"){
     window.location.href="https://vetsuy.github.io/Projekti/Tilaus_sivu/tilausprosessi.html"
     }
