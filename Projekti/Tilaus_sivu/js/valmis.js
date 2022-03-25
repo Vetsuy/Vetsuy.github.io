@@ -30,6 +30,7 @@ function kuvat(){
     }
 }
 function muokkaus(){
+    localStorage.setItem("tayte","ee")
     localStorage.setItem("toimii","ee")
     let a = localStorage.getItem("kuva")
     localStorage.setItem("yes","e")
@@ -51,6 +52,7 @@ let kok = localStorage.getItem(a)
 var ela = document.getElementsByName('pohja');
     const pohjia = ["norm","gluteeniton"]
     for (let i = 0; i < 4; i++) {
+        window.alert("et valinnut pohjaa")
         if (ela[i].checked) {
             localStorage.setItem(a,pohjia[i])
             localStorage.setItem("yes","ye")
