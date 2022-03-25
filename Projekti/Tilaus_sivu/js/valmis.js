@@ -72,7 +72,7 @@ var ela = document.getElementsByName('pohja');
     let poh = localStorage.getItem(a)
     var elo = document.getElementsByName('tayte');
     const taytteet = ["pepperoni","kinkku","ananas","kana","tonnikala","jauheliha"]
-    for (let i = 0; i < elo.length; i++) {
+    for (let i = 0; i < 6; i++) {
         
         if (elo[i].checked) {
             localStorage.setItem("tayte","kylla")
