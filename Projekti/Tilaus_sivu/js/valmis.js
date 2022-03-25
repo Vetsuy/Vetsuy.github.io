@@ -82,7 +82,7 @@ var ela = document.getElementsByName('pohja');
     if(kok=="small"){
         hinta -= 2
     }else if(kok=="medium"){
-        hinta = 15
+        hinta = 10
     }else if(kok="large"){
         hinta += 2
     }
