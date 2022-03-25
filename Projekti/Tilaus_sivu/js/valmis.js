@@ -59,8 +59,7 @@ var ela = document.getElementsByName('pohja');
             localStorage.setItem("toimii","kylla")
             break;
         }
-        else if(i==1){
-            window.alert("et valinnut pohjaa")
+        else if(i==2){
             break
         }
         
