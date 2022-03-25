@@ -8,7 +8,8 @@ function hidea(){
     let e = ["hinta","hinta_ju","hinta_ki","hinta_ja","hinta_ke","hinta_to","hinta_ve","hinta_f"]
     let v = ["pehinta","juhinta","kihinta","jahinta","kehinta","tohinta","vehinta","fahinta"]
     let x = ["pepperoni","juusto","kinkku","jauhe","kebab","tonni","vege","fhinta"]
-    for (let i = 0;i<as.length;i++){
+    let gf = 0
+    for (let i = 0;i<as.length+1;i++){
         for (u=0;u<=8;u++){
         if(as=a[u]){
             let b = localStorage.getItem(a[u])
@@ -17,14 +18,18 @@ function hidea(){
             document.getElementById(v[u]).textContent = d+",00€"
             d = d*parseInt(localStorage.getItem(a[u]))
             document.getElementById(e[u]).textContent = d+",00€"
+            gf++;
+        }
+        if(gf>=as.length){
+            break
         }
     }
     }
-    let f = parseInt(document.getElementById("hinta").textContent)+parseInt(document.getElementById("hinta_ju").textContent)+parseInt(document.getElementById("hinta_ki").textContent)+parseInt(document.getElementById("hinta_ja").textContent)+parseInt(document.getElementById("hinta_ke").textContent)+parseInt(document.getElementById("hinta_to").textContent)+parseInt(document.getElementById("hinta_ve").textContent)
-    document.getElementById("total").textContent = "Hinta "+f+",00€"
-    let g = parseInt(document.getElementById("count").textContent)+parseInt(document.getElementById("count_ju").textContent)+parseInt(document.getElementById("count_ki").textContent)+parseInt(document.getElementById("count_ja").textContent)+parseInt(document.getElementById("count_ke").textContent)+parseInt(document.getElementById("count_to").textContent)+parseInt(document.getElementById("count_ve").textContent)
+    let xx = localStorage.getItem("fsumma"); let xc = localStorage.getItem("kinkku"); let xz = localStorage.getItem("juusto"); let cx = localStorage.getItem("pepperoni");let vc = localStorage.getItem("tonni");let bv = localStorage.getItem("kebab");let oo = localStorage.getItem("vege");let op = localStorage.getItem("jauhe")
+    let gg = parseInt(xx)+parseInt(xc)+parseInt(xz)+parseInt(cx)+parseInt(vc)+parseInt(bv)+parseInt(oo)+parseInt(op)
+    document.getElementById("total").textContent = "Hinta "+gg+",00€"
+    let g = parseInt(document.getElementById("count").textContent)+parseInt(document.getElementById("count_ju").textContent)+parseInt(document.getElementById("count_ki").textContent)+parseInt(document.getElementById("count_ja").textContent)+parseInt(document.getElementById("count_ke").textContent)+parseInt(document.getElementById("count_to").textContent)+parseInt(document.getElementById("count_ve").textContent)+parseInt(document.getElementById("count_to").textContent)+parseInt(document.getElementById("count_f").textContent)
     document.getElementById("valinta").textContent = g+" valintaa"
-    localStorage.setItem("fuu",g)
 }
 function hideb(){
     if(localStorage.getItem("pepperonisumma")!=="0"){
@@ -108,6 +113,9 @@ localStorage.setItem("nouto","ei")
 window.location.reload();
 }
 function n(){
+    let xc = parseInt(document.getElementById("count_f").textContent)
+    
+    localStorage.setItem("fff",xc)
 localStorage.setItem("kuljetus", "ei")
 localStorage.setItem("nouto","kylla")
 window.location.reload();
@@ -157,6 +165,12 @@ function tiloo(){
     window.location.reload();
 }
 function kitiin(){
+    localStorage.setItem("kuljetus","e")
+    localStorage.setItem("kysy","e")
+    localStorage.setItem("tek","e")
+    localStorage.setItem("vika","e")
+    localStorage.setItem("aika","e")
+    localStorage.setItem("ti","e")
     localStorage.setItem("kinkkusumma","0")
     localStorage.setItem("kebabsumma","0")
     localStorage.setItem("pepperonisumma","0")
